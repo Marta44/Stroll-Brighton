@@ -46,9 +46,10 @@ Following a Minimal Viable Product (MVP) scheme this website wants to accomplish
 - Clarity.
 - Usability.
 - Respect users expectations and confidence.
-- Design appeal.
+- Design appeal that invoke the colours of the city of Brighton.
 ## 3. Structure
-The contents and information are readable and not overwhelming. This approach considers that a user is walking in the city and needs an immediate answer to his/her questions. The users needs to visualize and assimilate immediately imagery, contents and the map. Contact is provided through a contact form and social media icons in the footer.
+The contents and information are readable and not overwhelming. This approach considers that a user is walking in the city and needs an immediate answer to his/her questions. The users needs to visualize and assimilate immediately imagery, contents and the map. Contact is provided through a contact form or through my Github profile or Linkedin icons in the footer.
+Social media icons in the footer are meant to be a way to join Brighton community groups or share pictures.
 
 ## 4. Skeleton
 The website displays in an unique page divided into four sections. I created wireframes for every section:
@@ -58,14 +59,87 @@ The website displays in an unique page divided into four sections. I created wir
 - [Booking page wireframe](https://marta44.github.io/)
 ## 5. Surface
 Colours:
-For the main sections I choose pastel colours which reminds the typical Brighton houses.
-- Ford mint green: #CFFFE5
-- Light shade of orange: #FFE5CF
-- Light shade of yellow: #FFFDCF
-For the navigation bar and the footer I choose a White background as it is neutral and in contrast with the sections.
+For the sections I choose pastel colours which reminds the typical Brighton houses.
+- Ford mint green: #CFFFE5 for the about section
+- Light shade of orange: #FFE5CF for the explore section
+- Light shade of yellow: #FFFDCF for the contact section
+For the navigation bar and the footer I choose a White background as it is neutral and in contrast with the colorful sections.
+- # 
 Typography:
-- For the Logo I used Cabin Sketch Google Font.
-- For the contents I choose Ganja Flower Google Font because I find it artistic and easy to read.
-- For the Headings I choose ...because....
+- For the Logo I used "Cabin Sketch" Google Font because is an artistic and dynamic font.
+- For the contents I choose "Ganja Flower" Google Font because I have found it easy to read.
+- For the Headings I choose ""...because....
 Images:
-The images have been shot by me and selected to be eye-catching, interesting and engaging. The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
+The images have been shot by me (except for the home page photograph, credited in media) and selected to be eye-catching, interesting and engaging. 
+The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
+---
+## Features
+### Existing Features
+- An unique scrolling page divided into four sections (home-about-explore-booking). 
+- The navigation bar is fixed to the top of the page and brings the users to the different sections.
+- The footer is fixed to the bottom of the page and provides copyright info at the bottom-left, social media pages icons (GitHub, Linkedin, Facebook, Instagram) in the center, if clicked they bring the users to social media platforms opened on a different tab. 
+- On the "About section" is present a description about the aim of the project.
+- On the "Explore section" is present a Google Map API
+- On the "Contact section" is present a form to get in touch with me.
+### Features to add in the future
+- 
+## Technologies Used
+### Languages Used
+1. HTML [HTML5](https://en.wikipedia.org/wiki/HTML5)
+2. CSS [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+3. JAVASCRIPT [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+### Frameworks, Libraries and Integrations Used
+1. [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/) : was used to provide responsiveness on all device sizes and add some stylistic components.
+2. [Hover.css](https://ianlunn.github.io/Hover/) : a third part library used to add the transition effect to social media links in the footer and to underline the navbar text. 
+3. [FontAwesome](https://fontawesome.com/) : was used to add icons for social media links and for the little icons inside the buttons in the Explore section.
+4. [Google Fonts](https://fonts.google.com/) : was used to import typography fonts.
+5. [Balsamiq](https://balsamiq.com/) : was used to create wireframes during the design of the layout.
+6. [jQuery](https://jquery.com/) : was used to make the navbar responsive.
+7. [Popper.js](https://popper.js.org/) : was used to make the navbar responsive.
+8. [AutoPrefixer](https://autoprefixer.github.io/) : was used to analyse the CSS code and make it suitable for all browsers.
+9. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/): was used to generate the table of contents for this README file.
+10. [Google Map]() : Interactive Maps API
+11. [EmailJs SDK]() : Email API
+### Workspace and version control
+1. [Gitpod](https://gitpod.io/) : is the open-source IDE (Integrated Development Environment) that I used to create my project.
+2. [Git](https://git-scm.com/) : was used for version control by utilizing the Gitpod terminal (CLI) to commit to Git and push to GitHub.
+3. [GitHub](https://github.com/) : is a hosting platform used to deploy and store the project code after being pushed from Git.
+### IDE extensions installed in Gitpod
+- Auto Close Tag
+- Bootstrap 4 CDN Snippet
+- Code Spell Checker
+- Prettier - Code formatter
+- Markdownlint
+
+## Testing
+I have checked the validity of the code with: 
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [JS HINT](https://jshint.com/)
+Full testing documentation can be found in [TESTING.md]() 
+---
+### Bugs and challenges during the project
+---
+## Deployment
+---
+## Credits
+### Resources Used
+- [Code Institute Course Content](https://courses.codeinstitute.net/) - Main source of fundamental knowledge.
+- [Stack Overflow](https://stackoverflow.com/) - General resource.
+- [CSS-Tricks](https://css-tricks.com/) - General resource.
+- [W3.CSS](https://www.w3schools.com/w3css/4/w3.css) - General resource.
+- [Youtube](https://www.youtube.com/) - General resource.
+- [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup.
+- [Resize images](https://photoshop.adobe.com/) and [Compress images](https://compresspng.com/)
+- [Colors](https://encycolorpedia.com)- to find the right matching color palette for my website.
+### Code
+### Contents
+Contents and texts has been written by Marta Marassi and main source of information has been [Visit Brighton](https://www.visitbrighton.com/)
+### Media
+- For the home page I used a Photo from [Unsplash](https://unsplash.com/photos/Y2mwlfxTf-k) and the author is Rhys Kentish.
+- I created the Favorite Icon with [LogoMakr](https://logomakr.com/0vgmQT) and sized it with [Favicon](https://favicon.io/favicon-converter/)
+- I took inspiration from this website for the colours combination
+[Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
+## Acknowledgements
+I want to thank the Code Institute **SLACK Community** for the assistance and source of learning.
+> **_NOTE:_** This is for educational purposes.
