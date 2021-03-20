@@ -5,7 +5,11 @@
 * Browsers: last 4 version
 */
 /*--UX Colors
-Ford Mint Green: #cfffe5;
+White Smoke: #f5f5f5;
+Tutu: #fddfdf;
+Frosted Mint: #defde0;
+Alice Blue: #def3fd;
+
 --*/
 /*--Google Fonts
 font-family: 'Annie Use Your Telescope', cursive;
@@ -13,6 +17,12 @@ font-family: 'Cabin Sketch', cursive;
 font-family: 'Gaegu', cursive;
 --*/
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin+Sketch:wght@400;700&family=Gaegu&display=swap');
+/*--General--*/
+body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 /*--Navbar--*/
 .nav-container{
     display: -webkit-box;
@@ -48,4 +58,18 @@ a{
 }
 #nav-booking:hover{
     color: lightskyblue;
+}
+/*--Hero Image--*/
+.heroImg-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.heroImg-container img{
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
 }
