@@ -1,0 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+/*--UX Colors
+--*/
+/*--Google Fonts
+font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Gaegu', cursive;
+--*/
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin+Sketch:wght@400;700&family=Gaegu&display=swap');
