@@ -128,3 +128,27 @@ footer{
 .fa-instagram-square:hover{
     color: lightskyblue;
 }
+/*--Media Queries--*/
+/*--Phones--*/
+/*--Landscape phones--*/
+@media screen and (max-width: 768px){
+    footer{
+        height: 140px;
+    }
+    #social-col{
+        align-content: center; 
+        text-align: center; 
+        -ms-flex-line-pack: center; 
+         padding-top: 10px;
+        width: 90%;
+    }
+    #copyright-col{
+        align-content: center; 
+        text-align: center; 
+        -ms-flex-line-pack: center; 
+        padding-bottom: 10px;
+        width: 90%;
+    }
+
+}
+/*--Tablets--*/
