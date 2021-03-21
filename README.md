@@ -13,6 +13,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 ## User Stories
 - "I want to get in touch with a local person who can welcome and guide me in the city"
 - "I want to use a map which shows me suggested places and attractions"
+- "I want to use a map that autocomplete the names of the places I am looking for"
 - "I want to use my mobile phone to consult this website while I am strolling around the city"
 - "I want to join a social media community in Brighton where I can meet people or share my pictures"
 #### First time visitor goals:
@@ -46,7 +47,7 @@ Following a Minimal Viable Product (MVP) scheme this website wants to accomplish
 - Clarity.
 - Usability.
 - Respect users expectations and confidence.
-- Design appeal that invoke the colours of the city of Brighton.
+- Design appeal that invoke the pastel colours of the city of Brighton.
 ## 3. Structure
 The contents and information are readable and not overwhelming. This approach considers that a user is walking in the city and needs an immediate answer to his/her questions. The users needs to visualize and assimilate immediately imagery, contents and the map. Contact is provided through a contact form or through my Github profile or Linkedin icons in the footer.
 Social media icons in the footer are meant to be a way to join Brighton community groups or share pictures.
@@ -60,17 +61,19 @@ The website displays in an unique page divided into four sections. I created wir
 ## 5. Surface
 Colours:
 For the sections I choose pastel colours which reminds the typical Brighton houses.
-- Ford mint green: #CFFFE5 for the about section
-- Light shade of orange: #FFE5CF for the explore section
-- Light shade of yellow: #FFFDCF for the contact section
-For the navigation bar and the footer I choose a White background as it is neutral and in contrast with the colorful sections.
-- # 
+I took inspiration from this palette: ![Pastel colors palette](/assets/images/UXcolors-palette.png "Pastel colors")
+- Tutu: #fddfdf for the explore section
+- Frosted Mint: #defde0 for the tips section
+- Alice Blue: #def3fd for the booking section
+For the navigation bar and the footer I choose a Whitesmoke background (#f5f5f5) as it is neutral and in contrast with the colorful sections.
+For the navigation and footer links I used colors: orange, lightcoral, lightgreen and lightskyblue because provide enough visibility and readability.
+
 Typography:
-- For the Logo I used "Cabin Sketch" Google Font because is an artistic and dynamic font.
-- For the contents I choose "Ganja Flower" Google Font because I have found it easy to read.
-- For the Headings I choose ""...because....
+- For the Logo I used "Cabin Sketch" Google Font because is artistic and has the texture of a doodle.
+- For the main text and contents I choose "Ganja Flower" Google Font because I have found it fancy and easy to read.
+- For the Headings I choose "Annie Use Your Telescope" Google Font because seems an hand writing font and pairs with "Ganja Flower".
 Images:
-The images have been shot by me (except for the home page photograph, credited in media) and selected to be eye-catching, interesting and engaging. 
+The images have been shot by me (except for the home page photograph, credited in media) and selected to be eye-catching, interesting and engaging. I choose this favorite icon because reminds the famous Brighton beach Huts. 
 The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
 ---
 ## Features
