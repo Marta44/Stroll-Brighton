@@ -102,12 +102,15 @@ footer{
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
     padding-right: 20px;
     padding-top: 15px;
 }
 /*--Social media icons--*/
+.fab{
+    font-size: 27px;
+}
 .fab:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3); 
