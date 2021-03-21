@@ -55,8 +55,8 @@ Social media icons in the footer are meant to be a way to join Brighton communit
 ## 4. Skeleton
 The website displays in an unique page divided into four sections. I created wireframes for every section:
 - [Home page wireframe](https://marta44.github.io/)
-- [About page wireframe](https://marta44.github.io/)
 - [Explore page wireframe](https://marta44.github.io/)
+- [Tips page wireframe](https://marta44.github.io/)
 - [Booking page wireframe](https://marta44.github.io/)
 ## 5. Surface
 Colours:
@@ -78,11 +78,11 @@ The purpose of the images is to showcase the main locations of the city and enco
 ---
 ## Features
 ### Existing Features
-- An unique scrolling page divided into four sections (home-about-explore-booking). 
+- An unique scrolling page divided into four sections (home-explore-tips-booking). 
 - The navigation bar is fixed to the top of the page and brings the users to the different sections.
 - The footer is fixed to the bottom of the page and provides copyright info at the bottom-left, social media pages icons (GitHub, Linkedin, Facebook, Instagram) in the center, if clicked they bring the users to social media platforms opened on a different tab. 
-- On the "About section" is present a description about the aim of the project.
 - On the "Explore section" is present a Google Map API
+- On the "Tips section" is present a description about the aim of the project and suggested places to visit.
 - On the "Contact section" is present a form to get in touch with me.
 ### Features to add in the future
 - 
@@ -132,6 +132,10 @@ Full testing documentation can be found in [TESTING.md]()
 - [CSS-Tricks](https://css-tricks.com/) - General resource.
 - [W3.CSS](https://www.w3schools.com/w3css/4/w3.css) - General resource.
 - [Youtube](https://www.youtube.com/) - General resource.
+- [Bootstrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - to learn the Bootstrap grid system.
+- "How to Google Map pdf" by Eamonn Smyth - to learn the main steps to call a Google map API.
+- [Google developers documentation](https://developers.google.com/maps/documentation/places/web-service/supported_types) - main source to understand autocomplete users requests.
+- [Learn Git Branching](https://learngitbranching.js.org) - to learn branching and merging in git.
 - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup.
 - [Resize images](https://photoshop.adobe.com/) and [Compress images](https://compresspng.com/)
 - [Colors](https://encycolorpedia.com)- to find the right matching color palette for my website.
