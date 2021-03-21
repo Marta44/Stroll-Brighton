@@ -56,12 +56,22 @@
     </div>
 </section>
 <!--Explore map section-->
-<section id="Explore" class="container-fluid">
-    <div class="row">
+<section id="Explore" class="container">
+    <div class="row justify-content-center">
         <div class="col-12">
           <h2 class="Explore-heading">Explore...</h2>
+          <p>Search places by name or click on the categories suggested for some hints:</p>
         </div>
-        <div id="map"></div>
+        <!--Autocomplete locations search input-->
+        <div class="form-group">
+            <label>Search here:</label>
+            <input class="form-control" id="search-box" type="text" placeholder="Type place..."/>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col map-col">
+              <div id="map"></div>
+          </div>
+        </div>
     </div>
 </section>
 <!--Tips section-->
