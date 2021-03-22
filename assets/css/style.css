@@ -19,9 +19,11 @@ font-family: 'Gaegu', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin+Sketch:wght@400;700&family=Gaegu&display=swap');
 /*--General--*/
 body{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+}
+h2, h3{
+    font-family: 'Annie Use Your Telescope', cursive;
 }
 /*--Navbar--*/
 .nav-container{
@@ -74,7 +76,10 @@ a{
        object-fit: cover;
     -o-object-position: right;
        object-position: right;
-    overflow:hidden;
+    overflow-x:hidden;
+}
+section{
+    min-height: 100vh;
 }
 /*--Google Map--*/
 #map{
@@ -96,7 +101,8 @@ footer{
     display: -ms-inline-flexbox;
     display: inline-flex;
     height: 80px;
-    position: fixed;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 100%;
 }
 /*--Copyright--*/
@@ -109,14 +115,18 @@ footer{
     padding-top: 15px;
 }
 /*--- Social Media links ---*/
+#social-col{
+    align-content: flex-start; 
+        text-align: start; 
+        -ms-flex-line-pack: start; 
+}
 .social-media-links{
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
-    padding-right: 20px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     padding-top: 15px;
 }
 /*--Social media icons--*/
