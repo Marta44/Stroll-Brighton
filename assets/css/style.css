@@ -22,8 +22,15 @@ body{
     font-family: 'Gaegu', cursive;
     text-align: center;
 }
+section{
+    min-height: 100vh;
+}
 h2, h3{
     font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
 }
 /*--Navbar--*/
 .nav-container{
@@ -53,13 +60,13 @@ a{
     color: orange;
 }
 #nav-map:hover{
-    color: lightcoral;
+    color: lightskyblue;
 }
 #nav-explore:hover{
     color: lightgreen;
 }
 #nav-booking:hover{
-    color: lightskyblue;
+    color:  lightcoral;
 }
 /*--Hero Image--*/
 .heroImg-container{
@@ -72,14 +79,21 @@ a{
 }
 .heroImg-container img{
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: right;
        object-position: right;
-    overflow-x:hidden;
 }
-section{
-    min-height: 100vh;
+/*--Explore section--*/
+.explore-container{
+    background-color: #def3fd;
+}
+.explore-heading{
+    padding-top: 70px;
+}
+.search-label{
+    font-size: 20px;
 }
 /*--Google Map--*/
 #map{
@@ -92,6 +106,20 @@ section{
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
+}
+/*--Tips section--*/
+.tips-container{
+    background-color: #defde0;
+}
+.tips-heading{
+    padding-top: 70px;
+}
+/*--Booking section--*/
+.booking-container{
+    background-color: #fddfdf;
+}
+.booking-heading{
+    padding-top: 70px;
 }
 /*--Footer--*/
 footer{
@@ -145,13 +173,13 @@ footer{
     color:orange;
 }
 .fa-linkedin:hover{
-    color:lightcoral;
+    color: lightskyblue;
 }
 .fa-facebook-square:hover{
     color:lightgreen;
 }
 .fa-instagram-square:hover{
-    color: lightskyblue;
+    color: lightcoral;
 }
 /*--Media Queries--*/
 /*--Phones--*/
