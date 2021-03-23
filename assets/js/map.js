@@ -8,4 +8,8 @@ function initMap (){
         }
     });
 }
-//CREDIT: Google Map Documentation: 
+/*CREDIT: Google Map Documentation
+How to add a place autocomplete search widget: 
+https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
+*/
+
