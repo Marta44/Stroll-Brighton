@@ -39,6 +39,9 @@ p{
     display: flex;
     position: relative;
 }
+.navbar-nav{
+    text-align: left;
+}
 .bg-color-navbar{
     background-color: whitesmoke;
 }

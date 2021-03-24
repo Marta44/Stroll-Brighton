@@ -11,7 +11,7 @@ function initAutocomplete(){
     }
     );
 // Create the search box and link it to the input field
-    const input = document.getElementById("search-box");
+     const input = document.getElementById("search-box");
     const searchBox = new google.maps.places.SearchBox(input);
 // Bias the SearchBox results towards current map's viewport
     map.addListener("bounds_changed", function() {
@@ -23,7 +23,6 @@ function initAutocomplete(){
     searchBox.addListener("places_changed", function() {
       const places = searchBox.getPlaces();
       if (places.length == 0) {
-          window.alert("Type something");
       return;
     }
 // Clear out the old markers
@@ -35,6 +34,7 @@ function initAutocomplete(){
     const bounds = new google.maps.LatLngBounds();
     places.forEach(function(place) {
       if (!place.geometry || !place.geometry.location) {
+          window.alert(`No info provided for: ${place.name}`)
         return;
     }
     const icon = {
