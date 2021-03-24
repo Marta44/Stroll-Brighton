@@ -20,6 +20,7 @@ font-family: 'Gaegu', cursive;
 /*--General--*/
 body{
     font-family: 'Gaegu', cursive;
+    overflow-x: hidden;
     text-align: center;
 }
 section{
@@ -73,7 +74,7 @@ a{
 }
 /*--Hero Image--*/
 .heroImg-container{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     overflow:hidden;
@@ -87,6 +88,9 @@ a{
        object-fit: cover;
     -o-object-position: right;
        object-position: right;
+    overflow-x: hidden;
+    position: absolute;
+    transform: translateX(-50%);
 }
 /*--Explore section--*/
 .explore-container{
