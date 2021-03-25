@@ -3,40 +3,52 @@ https://developers.google.com/maps/documentation/javascript/examples/places-sear
 and
 https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 */
+var autocomplete=null;
+var map= null;
 function initAutocomplete(){
-    const map = new google.maps.Map(document.getElementById("map"),
+    map = new google.maps.Map(document.getElementById("map"),
     {
         zoom:14,
         center: new google.maps.LatLng(50.8211196,-0.1404786),
     }
     );
+    const options = {
+    componentRestrictions: {country: "gb"},
+    origin: map.getCenter(),
+    strictBounds: true,
+    };
+
 // Create the search box and link it to the input field
     const input = document.getElementById("search-box");
-    const searchBox = new google.maps.places.SearchBox(input);
-// Bias the SearchBox results towards current map's viewport
-    map.addListener("bounds_changed", function() {
-      searchBox.setBounds(map.getBounds());
-    });
+    autocomplete = new google.maps.places.Autocomplete(input, options);
+
+// Bias the autocomplete results towards current map's viewport
+    autocomplete.bindTo("bounds", map);
+
 // Create markers when users click on a result in the search box
-    let generalMarkers = [];
+    
+
 // Listen for the event fired when the user selects a prediction
-    searchBox.addListener("places_changed", function() {
-      const places = searchBox.getPlaces();
-      if (places.length == 0) {
+    autocomplete.addListener("place_changed", displayPlace); 
+}
+
+
+function displayPlace() {
+    const place = autocomplete.getPlace();
+    let generalMarkers = [];
+    if (!place.geometry || !place.geometry.location) {
+      // User entered the name of a Place that was not suggested and
+      // pressed the Enter key, or the Place Details request failed.
+      window.alert("No details available for input: '" + place.name + "'");
       return;
     }
+
 // Clear out the old markers
     generalMarkers.forEach(function(marker) {
       marker.setMap(null);
     });
     generalMarkers = [];
 // For each place, get the icon, name and location
-    const bounds = new google.maps.LatLngBounds();
-    places.forEach(function(place) {
-      if (!place.geometry || !place.geometry.location) {
-          window.alert(`No info provided for: ${place.name}`)
-        return;
-    }
     const icon = {
         url: place.icon,
         size: new google.maps.Size(71, 71),
@@ -53,12 +65,5 @@ function initAutocomplete(){
           position: place.geometry.location,
       })
     );
-    if (place.geometry.viewport) {
-        bounds.union(place.geometry.viewport);
-      } else {
-        bounds.extend(place.geometry.location);
-      }
-    });
-    map.fitBounds(bounds);
-  });
-}
+      map.setCenter(place.geometry.location);
+  }
