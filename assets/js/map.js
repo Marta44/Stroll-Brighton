@@ -6,12 +6,12 @@ https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 function initAutocomplete(){
     const map = new google.maps.Map(document.getElementById("map"),
     {
-        zoom:7,
-        center: new google.maps.LatLng(50.827930, -0.168749),
+        zoom:14,
+        center: new google.maps.LatLng(50.8211196,-0.1404786),
     }
     );
 // Create the search box and link it to the input field
-     const input = document.getElementById("search-box");
+    const input = document.getElementById("search-box");
     const searchBox = new google.maps.places.SearchBox(input);
 // Bias the SearchBox results towards current map's viewport
     map.addListener("bounds_changed", function() {
