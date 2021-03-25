@@ -25,6 +25,7 @@ body{
 }
 section{
     min-height: 100vh;
+    overflow: hidden;
 }
 h2, h3{
     font-family: 'Annie Use Your Telescope', cursive;
@@ -136,6 +137,9 @@ a{
 .booking-heading{
     padding-top: 70px;
 }
+.form-container{
+    width:60%;
+}
 /*--Footer--*/
 footer{
     bottom: 0;
@@ -198,6 +202,12 @@ footer{
 }
 /*--Media Queries--*/
 /*--Phones--*/
+footer{
+    bottom: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+}
 /*--Landscape phones--*/
 @media screen and (max-width: 768px){
     footer{

@@ -93,36 +93,37 @@
   </section>
   <!--Booking section-->
   <section id="Booking" class="container-fluid booking-container">
-    <div class="row">
+    <div class="row justify-content-center">
       <h2 class="booking-heading">Booking...</h2>
         <p></p>
     </div>
     <!--Contact Form-->
-    <div class="center-form">
-        <form onsubmit="return sendMail(this);" id="Contact-form">
+    <div class="container form-container">
+      <form onsubmit="return sendMail(this);" id="contactForm">
+        <div class="form-group">
+            <label for="Fullname">Full Name:</label>
+            <input type="text" name="fullname" class="form-control" id="fullname" required/>
+            <label for="Email">Email Address:</label>
+            <input type="email" name="email" class="form-control" id="email" required/>
+        </div>
+        <!--Form tour selection-->
+        <div class="form-group">
+            <label for="form-control-select">Select a tour:</label>
+            <select class="form-control" name="selection" id="selection" required>
+                <option>Art tour</option>
+                <option>Nature tour</option>
+                <option>Fun tour</option>
+            </select>
             <div class="form-group">
-              <label for="Fullname">Full Name:</label>
-              <input type="text" name="Fullname" class="form-control" id="Fullname" required/>
-              <label for="Email">Email Address:</label>
-              <input type="email" name="Email" class="form-control" id="Email" required/>
+                <label for="textarea">Pop a Message:</label>
+                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
             </div>
-            <!--Form tour selection-->
-            <div class="form-group">
-                <label for="form-control-select">Select a tour</label>
-                <select class="form-control" id="Selection" required>
-                    <option>Art tour</option>
-                    <option>Nature tour</option>
-                    <option>Fun tour</option>
-                </select>
-                <div class="form-group">
-                    <label for="textarea">Pop a Message</label>
-                    <textarea class="form-control" name="Message" id="Message" rows="4" required></textarea>
-                </div>
-                <button id="send-btn" type="submit" class="btn">
-                    Send
-                </button>
-            </div>
-        </form>
+            <!--Submit button-->
+            <button id="send-btn" type="submit" class="btn btn-secondary">
+                Send
+            </button>
+        </div>
+      </form>
     </div>
   </section>
   <!--Footer-->
@@ -171,6 +172,8 @@
   <!--Google Map Scripts-->
   <script src="assets/js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvjWISB3BYAzoKTvZzPuTGXrhnVcXU9kI&libraries=places&callback=initAutocomplete"></script>
+  <!--Email js scripts-->
+  <script src="assets/js/sendEmail.js"></script>
   <script type="text/javascript">
    (function(){
       emailjs.init("user_yeYzg1kEvM7XMmuk3gVub");
