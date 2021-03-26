@@ -1,10 +1,12 @@
 /*CREDIT: Google Map Documentation
-https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
 and
 https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 */
 var autocomplete=null;
 var map= null;
+let generalMarkers = [];
+// Set the map limited to Brighton (uk)
 function initAutocomplete(){
     map = new google.maps.Map(document.getElementById("map"),
     {
@@ -18,24 +20,19 @@ function initAutocomplete(){
     strictBounds: true,
     };
 
-// Create the search box and link it to the input field
+// Create the autocomplete search box and link it to the input field
     const input = document.getElementById("search-box");
     autocomplete = new google.maps.places.Autocomplete(input, options);
 
 // Bias the autocomplete results towards current map's viewport
     autocomplete.bindTo("bounds", map);
 
-// Create markers when users click on a result in the search box
-    
-
 // Listen for the event fired when the user selects a prediction
     autocomplete.addListener("place_changed", displayPlace); 
 }
 
-
 function displayPlace() {
     const place = autocomplete.getPlace();
-    let generalMarkers = [];
     if (!place.geometry || !place.geometry.location) {
       // User entered the name of a Place that was not suggested and
       // pressed the Enter key, or the Place Details request failed.
@@ -43,11 +40,6 @@ function displayPlace() {
       return;
     }
 
-// Clear out the old markers
-    generalMarkers.forEach(function(marker) {
-      marker.setMap(null);
-    });
-    generalMarkers = [];
 // For each place, get the icon, name and location
     const icon = {
         url: place.icon,
@@ -56,6 +48,7 @@ function displayPlace() {
         anchor: new google.maps.Point(17, 34),
         scaledSize: new google.maps.Size(25, 25),
     };
+
 // Create a marker for each place selected in the search box
     generalMarkers.push(
       new google.maps.Marker({
@@ -66,4 +59,14 @@ function displayPlace() {
       })
     );
       map.setCenter(place.geometry.location);
+  }
+
+// Clear out the old markers
+    function clearMarkers() {
+      for (var i = 0; i < generalMarkers.length; i++) {
+          if (generalMarkers[i]) {
+              generalMarkers[i].setMap(null);
+          }
+      }
+      generalMarkers = [];
   }

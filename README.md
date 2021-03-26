@@ -12,8 +12,9 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 ---
 ## User Stories
 - "I want to get in touch with a local person who can welcome and guide me in the city"
-- "I want to use a map which shows me suggested places and attractions"
 - "I want to use a map that autocomplete the names of the places I am looking for"
+- "I want to use a map which allows me to browse places by category"
+- "I want to use a map which shows me with a marker the location of the place I was looking for"
 - "I want to use my mobile phone to consult this website while I am strolling around the city"
 - "I want to join a social media community in Brighton where I can meet people or share my pictures"
 #### First time visitor goals:
