@@ -138,18 +138,19 @@ I have used the following commands throughout the project:
 I deployed the project following these steps:
 1. Log into GitHub
 2. Selected my repository: Marta44/Stroll-Brighton
-3. Clicked **Settings** on 
-4. Scrolled down to GitHub Pages section 
+3. Clicked **Settings** on the navigation menu ![Settings](/assets/images/Settings-section.jpg "Settings Section")
+4. Scrolled down to GitHub Pages section ![GitHub Pages](/assets/images/GitHubpages_deployed.png "GitHub Pages")
 4. I selected the master branch in the publishing **Source** dropdown menu and pressed **Save**
 5. The website has been published to GitHub Pages and the page refreshed automatically generating my site URL: [Live deployed page](https://marta44.github.io/Stroll-Brighton/)
 6. The deployed site will update automatically If I bring changes with new commits.
 
 How to run the code locally: 
-1. Navigate to my project GitHub repository [Follow this link](https://github.com/Marta44/to-press2019)
+1. Navigate to my project GitHub repository [Follow this link](https://github.com/Marta44/Stroll-Brighton)
 2. Click **Code** dropdown menu and you have two options:
 - Clone
 - Download the ZIP file (allows you to extract the files on your local machine)
-3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/to-press2019.git'
+![Clone or download Repo](/assets/images/clone-downloadRepo.png "Clone or Download Repository")
+3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/Stroll-Brighton.git'
 4. Press Enter and a clone of this project will be created on your machine.
 5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin'. This deletes all references to the remote repository without removing the repository from the remote server.
 ---
@@ -176,5 +177,6 @@ Contents and texts has been written by Marta Marassi and main source of informat
 - I took inspiration from this website for the colours combination
 [Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
 ## Acknowledgements
+I would like to say thanks to my mentor Ignatius Ukwuoma for his guidance and precious advices during the project.
 I want to thank the Code Institute **SLACK Community** for the assistance and source of learning.
 > **_NOTE:_** This is for educational purposes.
