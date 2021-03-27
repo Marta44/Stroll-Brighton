@@ -113,8 +113,17 @@ a{
 .btn-explore{
     background-color: whitesmoke;
 }
-.btn-explore:hover{
+#art-places:hover{
     border-color: orange;
+}
+#outdoor-places:hover{
+    border-color: blue;
+}
+#eat-places:hover{
+    border-color: lightgreen;
+}
+#amusement-places:hover{
+    border-color: lightcoral;
 }
 /*--Google Map--*/
 #map{
