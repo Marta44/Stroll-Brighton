@@ -8,15 +8,17 @@ function sendMail(contactForm){
     })
 
 .then (
-    function success(input){
+    // On success displays the browser alert window and the send button turns green
+    function success(){
         let sendBtn = document.getElementById("send-btn");
         sendBtn.style.backgroundColor="green";
         alert("Message successfully sent!")
     },
+    // On error displays the browser alert window and the send button turns red
     function (error){
         let sendBtn = document.getElementById("send-btn");
         sendBtn.style.backgroundColor="red";
-        alert("Error, Please fill the form again.")
+        alert("Error, Please fill the form again.", error)
     });
     document.getElementById("contactForm").reset(); // Clear the form fields after submission
 return false; // Stop loading a new page

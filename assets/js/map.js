@@ -72,8 +72,13 @@ function displayPlace() {
   }
 
 // Show all museum place type on button click "Art places"
-document.getElementById("art-places").addEventListener("click");
-console.log(art-places);
+document.getElementById("art-places").addEventListener("click", function search(){
+    var searchArtPlaces = {
+        bounds: map.getBounds(),
+          types: ['museum']
+    }
+});
+
 // Show all park place type on button click "Outdoor places"
 // Show all restaurant place type on button click "eat-places"
 // Show all amusement_park place type on button click "amusement-places"
