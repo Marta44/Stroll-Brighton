@@ -7,7 +7,8 @@ The project can be scalable and improved in the future adding events, festivals 
 ## Table of contents
 ---
 ## Overview
-This is an interactive front-end site that allows users to search for locations, activities and what to do in the city of Brighton UK. What makes this project different from many other websites is the possibility to address me enquires through a contact form and have a local tourist guide which can give you information and suggestions.
+
+> This is an interactive front-end site that allows users to search for locations, activities and what to do in the city of Brighton UK. What makes this project different from many other websites is the possibility to address me enquires through a contact form and have a local tourist guide which can give you information and suggestions.
 It is designed to be responsive on all devices (desktop screens, tablets and smartphones) with the awareness that a mobile phone will be the main users choice to browse this website. 
 ---
 ## User Stories
@@ -125,6 +126,32 @@ Full testing documentation can be found in [TESTING.md]()
 ### Bugs and challenges during the project
 ---
 ## Deployment
+I developed this project using Gitpod, an online IDE (Integrated Development Environment). 
+I have used the following commands throughout the project:
+- git add . or filename (to add the changes and files to a staging area)
+- git commit -m "" (to commit a message about the changes that have been brought)
+- git push (to push the code to GitHub that host my repository)
+- git checkout -b name of the branch (to switch and create at the same time a new branch to develop and test a specific Javascript function
+- git status (to understand in which branch I was working)
+- git checkout master (to swich again to the main branch)
+- git merge name of the branch (to merge the secondary branch into the main one)
+I deployed the project following these steps:
+1. Log into GitHub
+2. Selected my repository: Marta44/Stroll-Brighton
+3. Clicked **Settings** on 
+4. Scrolled down to GitHub Pages section 
+4. I selected the master branch in the publishing **Source** dropdown menu and pressed **Save**
+5. The website has been published to GitHub Pages and the page refreshed automatically generating my site URL: [Live deployed page](https://marta44.github.io/Stroll-Brighton/)
+6. The deployed site will update automatically If I bring changes with new commits.
+
+How to run the code locally: 
+1. Navigate to my project GitHub repository [Follow this link](https://github.com/Marta44/to-press2019)
+2. Click **Code** dropdown menu and you have two options:
+- Clone
+- Download the ZIP file (allows you to extract the files on your local machine)
+3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/to-press2019.git'
+4. Press Enter and a clone of this project will be created on your machine.
+5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin'. This deletes all references to the remote repository without removing the repository from the remote server.
 ---
 ## Credits
 ### Resources Used
