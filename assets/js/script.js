@@ -11,7 +11,9 @@ $(window).scroll(function(event){
 
 // Carousel cards in tips section
 $(document).ready(function(){
-    $("#carouselArt").carousel();
+    $("#carouselArt").carousel({
+        interval: false,
+    });
     $(".carousel-control-prev").click(function(){
         $("#carouselArt").carousel("prev");
     });
