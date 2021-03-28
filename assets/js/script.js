@@ -13,6 +13,7 @@ $(window).scroll(function(event){
 $(document).ready(function(){
     $("#carouselArt").carousel({
         interval: false,
+        keyboard: true,
     });
     $(".carousel-control-prev").click(function(){
         $("#carouselArt").carousel("prev");

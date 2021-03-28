@@ -134,7 +134,20 @@ a{
     padding-top: 70px;
 }
 /*--Carousel--*/
-
+.carousel-inner{
+    height: auto;
+}
+.card{
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+.card img{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
 /*--Booking section--*/
 .booking-container{
     background-color: #fddfdf;
