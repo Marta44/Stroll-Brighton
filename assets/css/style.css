@@ -27,9 +27,13 @@ section{
     min-height: 100vh;
     overflow: hidden;
 }
-h2, h3{
+h2{
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 40px;
+}
+h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 30px;
 }
 p{
     font-size: 20px;
