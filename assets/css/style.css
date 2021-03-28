@@ -133,6 +133,8 @@ a{
 .tips-heading{
     padding-top: 70px;
 }
+/*--Carousel--*/
+
 /*--Booking section--*/
 .booking-container{
     background-color: #fddfdf;
@@ -147,7 +149,6 @@ a{
 #send-btn{
     font-size: 18px;
     background-color: whitesmoke;
-    border-radius: 0;
     border-color: black;
 }
 /*--Footer--*/
