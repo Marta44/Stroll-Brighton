@@ -177,6 +177,6 @@ Contents and texts has been written by Marta Marassi and main source of informat
 - I took inspiration from this website for the colours combination
 [Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
 ## Acknowledgements
-I would like to say thanks to my mentor Ignatius Ukwuoma for his guidance and precious advices during the project.
-I want to thank the Code Institute **SLACK Community** for the assistance and source of learning.
+- I would like to say thanks to my mentor Ignatius Ukwuoma for his guidance and precious advices during the project.
+- I want to thank the Code Institute **SLACK Community** for the assistance and source of learning.
 > **_NOTE:_** This is for educational purposes.

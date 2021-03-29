@@ -69,10 +69,10 @@
         </div>
     </div>
     <div class="row button-places">
-        <button id="art-places" class="mx-3 btn-explore">Art Sites <i class="fas fa-palette"></i></button>
-        <button id="outdoor-places" class="mx-3 btn-explore">Outdoor Activities <i class="fas fa-tree"></i></button>
-        <button id="eat-places" class="mx-3 btn-explore">Eat and Drink <i class="fas fa-glass-martini-alt"></i></button>
-        <button id="amusement-places" class="mx-3 btn-explore">Amusement <i class="fas fa-rocket"></i></button>
+        <button id="btn-art" class="mx-3 btn-explore">Art Sites <i class="fas fa-palette"></i></button>
+        <button id="btn-outdoor" class="mx-3 btn-explore">Outdoor Activities <i class="fas fa-tree"></i></button>
+        <button id="btn-pub" class="mx-3 btn-explore">Eat and Drink <i class="fas fa-glass-martini-alt"></i></button>
+        <button id="btn-amusement" class="mx-3 btn-explore">Amusement <i class="fas fa-rocket"></i></button>
     </div>
     <!--Google Map-->
     <div class="row">
@@ -90,139 +90,107 @@
          Its vibrant, colourful and there are thousands of places to discover even if you are a local…ready to pace up and down?
         </p>
     </div>
-    <!--Carousel images and text Art Sites-->
+    <!--Carousel images-->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 d-flex">
-          <div id="carouselArt" class="carousel slide" data-ride="carousel">
-            <!--Wrapper for slides-->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="card card-body flex-fill">
-                  <img src="assets/images/Pavilion-min.png" class="card-img-top" name="img-slide" alt="Royal Pavilion">
-                  <div class="card-block">                
-                    <p class="card-text">Royal Pavilion</p>
-                  </div>
+        <div class="owl-carousel attractionSlider">
+            <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Pavilion-min.png" class="card-img-top" alt="Royal Pavilion">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Pavilion</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/Brighton-museum-min.png" class="card-img-top" name="img-slide" alt="Brighton Museum">
-                  <div class="card-block">                
-                    <p class="card-text">Brighton Museum</p>
-                  </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Brighton-museum-min.png" class="card-img-top" alt="Brighton Museum">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Brighton Museum</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/Enter-gallery-min.png" class="card-img-top" name="img-slide" alt="Enter Gallery">
-                  <div class="card-block">                
-                    <p class="card-text">Enter Gallery</p>
-                  </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Graffiti-min.png" class="card-img-top" alt="Graffiti">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Graffiti</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/Graffiti-min.png" class="card-img-top" name="img-slide" alt="Graffiti">
-                  <div class="card-block">                
-                    <p class="card-text">Graffiti</p>
-                  </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Enter-gallery-min.png" class="card-img-top" alt="Enter Gallery">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Enter Gallery</p>
+                    </div>
                 </div>
-              </div>
-              <!--Left and right controls-->
-              <a class="carousel-control-prev" role="button" href="#carouselPrev" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" href="#carouselNext" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Great-Eastern-pub-min.png" class="card-img-top" alt="Great Eastern Pub">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Great Eastern Pub</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/TigerPub-min.png" class="card-img-top" alt="Tiger Pub">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Tiger Pub</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/TheHeart-pub-min.png" class="card-img-top" alt="The Heart and hand Pub">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">The Heart and hand Pub</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/English's-min.png" class="card-img-top" alt="English's restaurant">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">English's restaurant</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Seven-Sisters-min.png" class="card-img-top" alt="Seven Sisters cliffs">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Seven Sisters cliffs</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Brighton-pier-min.png" class="card-img-top" alt="Brighton Pier">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Brighton Pier</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/i360-tower-min.png" class="card-img-top" alt="British Airways i360">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">British Airways i360</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carousel-image">
+                        <img src="assets/images/Aquarium-min.png" class="card-img-top" alt="Aquarium">
+                    </div>
+                    <div class="carousel-content">
+                        <p class="text">Aquarium</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!--Carousel images and text Pubs and restaurants-->
-        <div class="col-md-4 d-flex">
-          <div id="carouselPubs" class="carousel slide" data-ride="carousel">
-          <!--Wrapper for slides-->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="card card-body flex-fill">
-                  <img src="assets/images/Great-Eastern-pub-min.png" class="card-img-top" name="img-slide" alt="Great Eastern Pub">
-                  <div class="card-block">                
-                    <p class="card-text">Great Eastern Pub</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/English's-min.png" class="card-img-top" name="img-slide" alt="English's restaurant">
-                  <div class="card-block">                
-                    <p class="card-text">English's restaurant</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/TheHeart-pub-min.png" class="card-img-top" name="img-slide" alt="The Heart and Hand pub">
-                  <div class="card-block">                
-                    <p class="card-text">The Heart and Hand pub</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/TigerPub-min.png" class="card-img-top" name="img-slide" alt="Tiger Pub">
-                  <div class="card-block">                
-                    <p class="card-text">Tiger Pub</p>
-                  </div>
-                </div>
-              </div>
-              <!--Left and right controls-->
-              <a class="carousel-control-prev" role="button" href="#carouselPrev" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" href="#carouselNext" data-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--Carousel images and text Attractions-->
-        <div class="col-md-4 d-flex">
-          <div id="carouselAttractions" class="carousel slide" data-ride="carousel">
-          <!--Wrapper for slides-->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="card card-body flex-fill">
-                  <img src="assets/images/Seven-Sisters-min.png" class="card-img-top" name="img-slide" alt="Seven Sisters Cliffs">
-                  <div class="card-block">                
-                    <p class="card-text">Seven Sisters</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/Brighton-pier-min.png" class="card-img-top" name="img-slide" alt="Brighton Pier">
-                  <div class="card-block">                
-                    <p class="card-text">Brighton Pier</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/i360-tower-min.png" class="card-img-top" name="img-slide" alt="British Airways i360 Tower">
-                  <div class="card-block">                
-                    <p class="card-text">i360 Tower</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/Graffiti-min.png" class="card-img-top" name="img-slide" alt="Aquarium">
-                  <div class="card-block">                
-                    <p class="card-text">Aquarium</p>
-                  </div>
-                </div>
-              </div>
-              <!--Left and right controls-->
-              <a class="carousel-control-prev" role="button" href="#carouselPrev" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" href="#carouselNext" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </div>    
   </section>
   <!--Booking section-->
   <section id="Booking" class="container-fluid booking-container">
@@ -235,21 +203,21 @@
       <form onsubmit="return sendMail(this);" id="contactForm">
         <div class="form-group">
             <label for="Fullname">Full Name:</label>
-            <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name" required/>
+            <input type="text" name="Fullname" class="form-control" id="Fullname" placeholder="Full Name" required/>
             <label for="Email">Email Address:</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required/>
+            <input type="email" name="Email" class="form-control" id="Email" placeholder="Email Address" required/>
         </div>
         <!--Form tour selection-->
         <div class="form-group">
-            <label for="form-control-select">Select a tour:</label>
-            <select class="form-control" name="selection" id="selection" required>
-                <option>Art tour</option>
-                <option>Nature tour</option>
-                <option>Fun tour</option>
+            <label for="Selection">Select a tour:</label>
+            <select class="form-control" name="Selection" id="Selection" size="1" required>
+                <option value="art-tour">Art tour</option>
+                <option value="nature-tour">Nature tour</option>
+                <option value="fun-tour">Fun tour</option>
             </select>
             <div class="form-group">
-                <label for="textarea">Pop a Message:</label>
-                <textarea class="form-control" name="message" id="message" rows="4"  placeholder="Type your message" required></textarea>
+                <label for="Message">Pop a Message:</label>
+                <textarea class="form-control" name="Message" id="Message" rows="4"  placeholder="Type your message" required></textarea>
             </div>
             <!--Submit button-->
             <button id="send-btn" type="submit" class="btn btn-light">
@@ -301,13 +269,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <!--Google Map Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="assets/js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvjWISB3BYAzoKTvZzPuTGXrhnVcXU9kI&libraries=places&callback=initAutocomplete"></script>
   <!--Email js scripts-->
   <script src="assets/js/sendEmail.js"></script>
-  <script type="text/javascript">
+  <script>
    (function(){
       emailjs.init("user_yeYzg1kEvM7XMmuk3gVub");
    })();

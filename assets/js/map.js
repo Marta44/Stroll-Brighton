@@ -72,13 +72,13 @@ function displayPlace() {
   }
 
 // Show all museum place type on button click "Art places"
-document.getElementById("art-places").addEventListener("click", function search(){
-    var searchArtPlaces = {
-        bounds: map.getBounds(),
-          types: ['museum']
-    }
-});
+const artPlaces = document.getElementById("btn-art");
 
 // Show all park place type on button click "Outdoor places"
+const outdoorPlaces = document.getElementById("btn-outdoor");
+
 // Show all restaurant place type on button click "eat-places"
+const pubPlaces = document.getElementById("btn-pub");
+
 // Show all amusement_park place type on button click "amusement-places"
+const amusementPlaces = document.getElementById("btn-amusement");

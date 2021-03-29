@@ -10,15 +10,3 @@ $(window).scroll(function(event){
 });
 
 // Carousel cards in tips section
-$(document).ready(function(){
-    $("#carouselArt").carousel({
-        interval: false,
-        keyboard: true,
-    });
-    $(".carousel-control-prev").click(function(){
-        $("#carouselArt").carousel("prev");
-    });
-    $(".carousel-control-next").click(function(){
-        $("#carouselArt").carousel("next");
-    });
-});

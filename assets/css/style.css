@@ -138,19 +138,17 @@ a{
     padding-top: 70px;
 }
 /*--Carousel--*/
-.carousel-inner{
-    height: auto;
-}
-.card{
+.attractionSlider{
     display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
 }
-.card img{
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+.attractionSlider .card{
+    height:200px;
+    width:100%;
+}
+.card-img-top{
+    width:100%;
+    object-fit: cover;
+    height: 50vh;
 }
 /*--Booking section--*/
 .booking-container{
