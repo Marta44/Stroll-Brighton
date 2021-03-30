@@ -9,4 +9,6 @@ $(window).scroll(function(event){
     });
 });
 
-// Carousel cards in tips section
+
+
+
