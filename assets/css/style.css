@@ -142,10 +142,10 @@ a{
     display: flex;
 }
 .attractionSlider .card{
-    height:200px;
-    width:100%;
+    flex: 1;
+    background-color: whitesmoke;
 }
-.card-img-top{
+.attractionSlider .card .card-img-top img{
     width:100%;
     object-fit: cover;
     height: 60vh;
