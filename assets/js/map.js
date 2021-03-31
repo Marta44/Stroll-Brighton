@@ -69,7 +69,7 @@ function displayPlace() {
           if (generalMarkers[i]) {
               generalMarkers[i].setMap(null);
           }
-        }
+      }
       generalMarkers = [];
   }
 
@@ -78,6 +78,9 @@ const artPlaces = document.getElementById("btn-art");
 
 artPlaces.onclick = function(){
     clearMarkers();
+    if ($("#btn-art").html()=== "Art Sites"){
+        createMarker;
+    }
 }
 function nearbySearch(){
 var request= {
@@ -107,9 +110,17 @@ function createMarker(place){
 
 // Show all park place type on button click "Outdoor places"
 const outdoorPlaces = document.getElementById("btn-outdoor");
+outdoorPlaces.onclick = function(){
+    clearMarkers();
+}
 
 // Show all restaurant place type on button click "eat-places"
 const pubPlaces = document.getElementById("btn-pub");
-
+pubPlaces.onclick = function(){
+    clearMarkers();
+}
 // Show all amusement_park place type on button click "amusement-places"
 const amusementPlaces = document.getElementById("btn-amusement");
+amusementPlaces.onclick = function(){
+    clearMarkers();
+}
