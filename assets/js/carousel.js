@@ -7,13 +7,14 @@ $(document).ready(function(){
         items: 3,
         margin: 10,
         nav: true,
-        navText: ['<i class="fas fa-chevron-left">', '<i class="fas fa-chevron-right"></i>'],
+        navText: ['<i class="fas fa-chevron-left" aria-label= "left arrow">', '<i class="fas fa-chevron-right" aria-label= "right arrow"></i>'],
         autoplay: false,
         responsiveClass: true,
         responsive:{
             0:{
                 items: 1,
-                nav: true
+                nav: true,
+                dots: false,
             },
             480:{
                 items: 2,

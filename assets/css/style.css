@@ -137,6 +137,10 @@ a{
 .tips-heading{
     padding-top: 70px;
 }
+.tips-text{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
 /*--Carousel--*/
 .attractionSlider{
     display: flex;
