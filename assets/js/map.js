@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 var autocomplete=null;
 var map= null;
 let generalMarkers = [];
+var service;
+
 // Set the map limited to Brighton (uk)
 function initAutocomplete(){
     map = new google.maps.Map(document.getElementById("map"),
@@ -67,12 +69,41 @@ function displayPlace() {
           if (generalMarkers[i]) {
               generalMarkers[i].setMap(null);
           }
-      }
+        }
       generalMarkers = [];
   }
 
-// Show all museum place type on button click "Art places"
+// Show all museum place type on button click "artPlaces"
 const artPlaces = document.getElementById("btn-art");
+
+artPlaces.onclick = function(){
+    clearMarkers();
+}
+function nearbySearch(){
+var request= {
+    radius: '5000',
+    type: ["museum"]
+};
+// Create the places service
+service= new google.maps.places.PlacesService(map);
+
+// Perform a nearby search
+service.nearbySearch(request, callback);
+function callback(results, status){
+    if(status == google.maps.places.PlacesServiceStatus.OK)
+    for(var i=0; i<results.length; i++){
+        createMarker(results[i]);
+    }
+}
+}
+function createMarker(place){
+    if (!place.geometry || !place.geometry.location) return;
+    const marker= new google.maps.Marker({
+        map,
+        position: place.geometry.location,
+    });
+}
+
 
 // Show all park place type on button click "Outdoor places"
 const outdoorPlaces = document.getElementById("btn-outdoor");
