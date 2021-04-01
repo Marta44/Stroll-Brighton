@@ -115,12 +115,14 @@ a{
     padding-bottom: 20px;
 }
 .btn-explore{
+    margin-top: 15px;
     background-color: whitesmoke;
 }
 /*--Google Map--*/
 #map{
     width: 70%;
     height: 350px;
+    margin-top: 30px;
 }
 .col-map{
     display: -webkit-box;
@@ -152,7 +154,11 @@ a{
 .attractionSlider .card .card-img-top img{
     width:100%;
     object-fit: cover;
-    height: 60vh;
+    height: 50vh;
+}
+.owl-nav{
+    font-size: 30px;
+    margin-top: 0;
 }
 /*--Booking section--*/
 .booking-container{
@@ -240,6 +246,13 @@ footer{
 }
 /*--Landscape phones--*/
 @media screen and (max-width: 768px){
+    .btn-explore{
+        margin-bottom: 5px;
+    }
+    #map{
+        width: 90%;
+        margin-bottom: 20px;
+    }
     .form-container{
     width:75%;
     }

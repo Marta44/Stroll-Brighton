@@ -73,15 +73,13 @@ function displayPlace() {
       generalMarkers = [];
   }
 
-// Show all museum place type on button click "artPlaces"
+// Show all museum place type on button click "btn-art"
 const artPlaces = document.getElementById("btn-art");
 
 artPlaces.onclick = function(){
     clearMarkers();
-    if ($("#btn-art").html()=== "Art Sites"){
-        createMarker;
     }
-}
+
 function nearbySearch(){
 var request= {
     radius: '5000',
@@ -93,7 +91,7 @@ service= new google.maps.places.PlacesService(map);
 // Perform a nearby search
 service.nearbySearch(request, callback);
 function callback(results, status){
-    if(status == google.maps.places.PlacesServiceStatus.OK)
+    if(status === google.maps.places.PlacesServiceStatus.OK)
     for(var i=0; i<results.length; i++){
         createMarker(results[i]);
     }
@@ -108,18 +106,18 @@ function createMarker(place){
 }
 
 
-// Show all park place type on button click "Outdoor places"
+// Show all park place type on button click "btn-outdoor"
 const outdoorPlaces = document.getElementById("btn-outdoor");
 outdoorPlaces.onclick = function(){
     clearMarkers();
 }
 
-// Show all restaurant place type on button click "eat-places"
+// Show all pubs place type on button click "btn-pub"
 const pubPlaces = document.getElementById("btn-pub");
 pubPlaces.onclick = function(){
     clearMarkers();
 }
-// Show all amusement_park place type on button click "amusement-places"
+// Show all amusement_park place type on button click "btn-amusement"
 const amusementPlaces = document.getElementById("btn-amusement");
 amusementPlaces.onclick = function(){
     clearMarkers();
