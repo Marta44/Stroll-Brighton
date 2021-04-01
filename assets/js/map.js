@@ -78,30 +78,45 @@ const artPlaces = document.getElementById("btn-art");
 
 artPlaces.onclick = function(){
     clearMarkers();
-    }
+    nearbySearch('museum');
+    
+}
+function displayPlaces(places){
 
-function nearbySearch(){
-var request= {
-    radius: '5000',
-    type: ["museum"]
-};
-// Create the places service
-service= new google.maps.places.PlacesService(map);
+}
 
-// Perform a nearby search
-service.nearbySearch(request, callback);
-function callback(results, status){
-    if(status === google.maps.places.PlacesServiceStatus.OK)
-    for(var i=0; i<results.length; i++){
-        createMarker(results[i]);
+function nearbySearch(placeType){
+    var request= {
+        location: {
+               "lat" : 50.8211196,
+               "lng" : -0.1404786
+            },
+        radius: '5000',
+        type: [placeType]
+    };
+
+    // Create the places service
+    service= new google.maps.places.PlacesService(map);
+
+    // Perform a nearby search
+    service.nearbySearch(request, callback);
+  
+    function callback(results, status){
+        displayPlaces(results);
+        if(status === google.maps.places.PlacesServiceStatus.OK)
+        for(var i=0; i<results.length; i++){
+            createMarker(results[i]);
+        }
     }
 }
-}
+
 function createMarker(place){
     if (!place.geometry || !place.geometry.location) return;
+    console.log('createMarker');
+    console.log('place', place);
     const marker= new google.maps.Marker({
         map,
-        position: place.geometry.location,
+        position: place.geometry.location
     });
 }
 
