@@ -1,5 +1,5 @@
 # Stroll Brighton
-![Poster of Brighton]()
+![Postcard of Brighton](/assets/images/Postcard-Stroll-Brighton-min.png)
 The aim of this project is to guide tourists but also locals at the discovery of Brighton and its hidden places. Its aim is also to promote walkings and outdoor activities after lock-down.
 The project can be scalable and improved in the future adding events, festivals and concerts as are the core of this vibrant city. 
 [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
@@ -172,7 +172,10 @@ How to run the code locally:
 ### Contents
 Contents and texts has been written by Marta Marassi and main source of information has been [Visit Brighton](https://www.visitbrighton.com/)
 ### Media
-- For the home page I used a Photo from [Unsplash](https://unsplash.com/photos/Y2mwlfxTf-k) and the author is Rhys Kentish.
+- The hero image in the home page is from [Unsplash](https://unsplash.com/photos/Y2mwlfxTf-k) and the author is Rhys Kentish.
+- The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created if with Canva.
+- In the carousel in the tip section I used two pictures from [Pixabay](https://pixabay.com/it/photos/architettura-costruzione-2566173/) and [Pixabay](https://www.pexels.com/photo/brown-concrete-building-near-body-of-water-3224129/).
+- All the other pictures were taken by me.
 - I created the Favorite Icon with [LogoMakr](https://logomakr.com/0vgmQT) and sized it with [Favicon](https://favicon.io/favicon-converter/)
 - I took inspiration from this website for the colours combination
 [Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
