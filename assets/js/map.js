@@ -3,9 +3,10 @@ https://developers.google.com/maps/documentation/javascript/examples/places-auto
 and
 https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 */
-var autocomplete=null;
-var map= null;
-let generalMarkers = [];
+
+var autocomplete = null;
+var map = null;
+let generalMarker = [];
 var service;
 
 // Set the map limited to Brighton (uk)
@@ -16,20 +17,21 @@ function initAutocomplete(){
         center: new google.maps.LatLng(50.8211196,-0.1404786),
     }
     );
+
     const options = {
     componentRestrictions: {country: "gb"},
     origin: map.getCenter(),
     strictBounds: true,
     };
 
-// Create the autocomplete search box and link it to the input field
+    // Create the autocomplete search box and link it to the input field
     const input = document.getElementById("search-box");
     autocomplete = new google.maps.places.Autocomplete(input, options);
 
-// Bias the autocomplete results towards current map's viewport
+    // Bias the autocomplete results towards current map's viewport
     autocomplete.bindTo("bounds", map);
 
-// Listen for the event fired when the user selects a prediction
+    // Listen for the event fired when the user selects a prediction
     autocomplete.addListener("place_changed", displayPlace); 
 }
 
@@ -42,7 +44,7 @@ function displayPlace() {
       return;
     }
 
-// For each place, get the icon, name and location
+    // For each place, get the icon, name and location
     const icon = {
         url: place.icon,
         size: new google.maps.Size(71, 71),
@@ -51,36 +53,44 @@ function displayPlace() {
         scaledSize: new google.maps.Size(25, 25),
     };
 
-// Create a marker for each place selected in the search box
-    generalMarkers.push(
-      new google.maps.Marker({
+    // Create a marker for each place selected in the search box
+    generalMarker.push(
+        new google.maps.Marker({
           map,
           icon,
           title: place.name,
           position: place.geometry.location,
-      })
+        })
     );
-      map.setCenter(place.geometry.location);
-  }
+    map.setCenter(place.geometry.location);
+    }
 
-// Clear out the old markers
+    // Clear out the old markers
     function clearMarkers() {
-      for (var i = 0; i < generalMarkers.length; i++) {
-          if (generalMarkers[i]) {
-              generalMarkers[i].setMap(null);
+      for (var i = 0; i < generalMarker.length; i++) {
+          if (generalMarker[i]) {
+              generalMarker[i].setMap(null);
           }
       }
-      generalMarkers = [];
-  }
+      generalMarker = [];
+    }
 
-// Show all museum place type on button click "btn-art"
+// Show the different categories on button click
 const artPlaces = document.getElementById("btn-art");
+const outdoorPlaces = document.getElementById("btn-outdoor");
+const cafePlaces = document.getElementById("btn-cafe");
+const amusementPlaces = document.getElementById("btn-amusement");
 
-artPlaces.onclick = function(){
-    clearMarkers();
-    nearbySearch('museum');
-    
-}
+// Create a list of my all my place selections
+const placeOptions = [[artPlaces, "museum"], [outdoorPlaces, "park"], [cafePlaces, "cafe"], [amusementPlaces, "amusement_park"]];
+
+placeOptions.forEach(function(option){
+    option[1].onclick = function(){
+        clearMarkers();
+        nearbySearch(option[2])
+    }
+})
+
 function displayPlaces(places){
 
 }
@@ -100,7 +110,8 @@ function nearbySearch(placeType){
 
     // Perform a nearby search
     service.nearbySearch(request, callback);
-  
+
+    // Display the markers for the four categories
     function callback(results, status){
         displayPlaces(results);
         if(status === google.maps.places.PlacesServiceStatus.OK)
@@ -121,19 +132,3 @@ function createMarker(place){
 }
 
 
-// Show all park place type on button click "btn-outdoor"
-const outdoorPlaces = document.getElementById("btn-outdoor");
-outdoorPlaces.onclick = function(){
-    clearMarkers();
-}
-
-// Show all pubs place type on button click "btn-pub"
-const pubPlaces = document.getElementById("btn-pub");
-pubPlaces.onclick = function(){
-    clearMarkers();
-}
-// Show all amusement_park place type on button click "btn-amusement"
-const amusementPlaces = document.getElementById("btn-amusement");
-amusementPlaces.onclick = function(){
-    clearMarkers();
-}
