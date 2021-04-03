@@ -124,7 +124,8 @@ I have checked the validity of the code with:
 Full testing documentation can be found in [TESTING.md](https://github.com/Marta44/Stroll-Brighton/blob/master/TESTING.md) 
 ---
 ### Bugs and challenges during the project
-
+- Emailjs stopped working when I merged into the master branch the owl carousel branch. After I reordered the scripts in this order: jquery,  popper, bootstrap, google map, emailjs and then my scripts it worked again.
+- For me has been a challenge to understand how to loop through the four types of places and I have to thank my Mentor Ignatius Ukwuoma to have shown me how to build sub-arrays into an array and loop through the results with a for each loop.
 ---
 ## Deployment
 I developed this project using Gitpod, an online IDE (Integrated Development Environment). 
