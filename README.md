@@ -133,7 +133,7 @@ I have used the following commands throughout the project:
 - git push (to push the code to GitHub that host my repository)
 - git checkout -b name of the branch (to switch and create at the same time a new branch to develop and test a specific Javascript function
 - git status (to understand in which branch I was working)
-- git checkout master (to swich again to the main branch)
+- git checkout master (to switch again to the main branch)
 - git merge name of the branch (to merge the secondary branch into the main one)
 I deployed the project following these steps:
 1. Log into GitHub
@@ -153,6 +153,7 @@ How to run the code locally:
 3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/Stroll-Brighton.git'
 4. Press Enter and a clone of this project will be created on your machine.
 5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin'. This deletes all references to the remote repository without removing the repository from the remote server.
+6. When you clone this project to make Google Map loading on your local machine you have to generate a new API key following these steps [Generate an API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and copy your API key into the script in your html file.
 ---
 ## Credits
 ### Resources Used
@@ -173,7 +174,7 @@ How to run the code locally:
 Contents and texts has been written by Marta Marassi and main source of information has been [Visit Brighton](https://www.visitbrighton.com/)
 ### Media
 - The hero image in the home page is from [Unsplash](https://unsplash.com/photos/Y2mwlfxTf-k) and the author is Rhys Kentish.
-- The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created if with Canva.
+- The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created if with [Canva](https://www.canva.com/design/DAEah1hBTKM/4NPEN5NRMarOmrCE6hnO7g/edit).
 - In the carousel in the tip section I used two pictures from [Pixabay](https://pixabay.com/it/photos/architettura-costruzione-2566173/) and [Pixabay](https://www.pexels.com/photo/brown-concrete-building-near-body-of-water-3224129/).
 - All the other pictures were taken by me.
 - I created the Favorite Icon with [LogoMakr](https://logomakr.com/0vgmQT) and sized it with [Favicon](https://favicon.io/favicon-converter/)
