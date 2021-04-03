@@ -56,10 +56,10 @@ Social media icons in the footer are meant to be a way to join Brighton communit
 
 ## 4. Skeleton
 The website displays in an unique page divided into four sections. I created wireframes for every section:
-- [Home page wireframe](https://marta44.github.io/)
-- [Explore page wireframe](https://marta44.github.io/)
-- [Tips page wireframe](https://marta44.github.io/)
-- [Booking page wireframe](https://marta44.github.io/)
+- [Home page wireframe]()
+- [Explore page wireframe]()
+- [Tips page wireframe]()
+- [Booking page wireframe]()
 ## 5. Surface
 Colours:
 For the sections I choose pastel colours which reminds the typical Brighton houses.
@@ -121,9 +121,10 @@ I have checked the validity of the code with:
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [W3C Markup Validation Service](https://validator.w3.org/)
 - [JS HINT](https://jshint.com/)
-Full testing documentation can be found in [TESTING.md]() 
+Full testing documentation can be found in [TESTING.md](https://github.com/Marta44/Stroll-Brighton/blob/master/TESTING.md) 
 ---
 ### Bugs and challenges during the project
+
 ---
 ## Deployment
 I developed this project using Gitpod, an online IDE (Integrated Development Environment). 

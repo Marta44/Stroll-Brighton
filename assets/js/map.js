@@ -9,7 +9,7 @@ var map = null;
 let generalMarker = [];
 var service;
 
-// Set the map limited to Brighton (uk)
+// Set the map limited to UK
 function initAutocomplete(){
     map = new google.maps.Map(document.getElementById("map"),
     {
@@ -82,16 +82,17 @@ const cafePlaces = document.getElementById("btn-cafe");
 const amusementPlaces = document.getElementById("btn-amusement");
 
 // Create a list of my all my place selections
-const placeOptions = [[artPlaces, "museum"], [outdoorPlaces, "park"], [cafePlaces, "cafe"], [amusementPlaces, "amusement_park"]];
+const placeType = [[artPlaces, "museum"], [outdoorPlaces, "park"], [cafePlaces, "cafe"], [amusementPlaces, "amusement_park"]];
 
-placeOptions.forEach(function(option){
-    option[1].onclick = function(){
+placeType.forEach(function(option){
+    option[0].onclick = function(){
         clearMarkers();
-        nearbySearch(option[2])
+        nearbySearch(option[1])
     }
 })
 
 function displayPlaces(places){
+    
 
 }
 
