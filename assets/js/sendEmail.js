@@ -1,7 +1,6 @@
 // Credit: Code Institute course materials for emailJs
-function sendMail(contactForm){
-    let emailjs;
-    emailjs.send("Stroll-Brighton","CI-MS2",{
+function sendMail(contactForm) {
+    emailjs.send("Stroll-Brighton","CI-MS2", {
         "from_name":contactForm.fullname.value,
         "from_email":contactForm.email.value,
         "selection":contactForm.selection.value,
@@ -10,7 +9,7 @@ function sendMail(contactForm){
 
 .then (
     // On success the browser alert window appears and the send button displays "Sent!"
-    function (success){
+    function (success) {
         let sendBtn = document.getElementById("send-btn");
         sendBtn.innerHTML="Sent!";
         alert("Message successfully sent!", success);

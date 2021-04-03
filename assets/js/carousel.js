@@ -2,7 +2,7 @@
 and Owl Carousel documentation: https://owlcarousel2.github.io/OwlCarousel2/docs/api-classes.html
 */
 // Owl Carousel cards in tips section
-$(document).ready(function(){
+$(document).ready(function() {
     $('.attractionSlider').owlCarousel({
         items: 3,
         margin: 10,
@@ -26,5 +26,5 @@ $(document).ready(function(){
                 nav:true
             }
         }
-});
+    });
 });
