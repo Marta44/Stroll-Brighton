@@ -8,6 +8,7 @@ var autocomplete = null;
 var map = null;
 let generalMarker = [];
 var service;
+var cardContainer = document.getElementById("card-places");
 
 // Set the map limited to UK
 function initAutocomplete(){
@@ -91,8 +92,17 @@ placeType.forEach(function(option){
     }
 })
 
-function displayPlaces(places){
-    
+function displayPlaces(places) {
+    places.forEach(place => {
+        cardContainer.innerHTML = 
+        cardContainer.innerHTML + 
+        `<div class="card">
+        <img src= ${place.photos} class="card-img-top">
+        <h2>${place.name}</h2>
+        <br>
+        <h3>${place.vicinity}</h3>
+        </div>`;
+    })
 
 }
 
@@ -123,7 +133,7 @@ function nearbySearch(placeType){
 }
 
 function createMarker(place){
-    if (!place.geometry || !place.geometry.location) return;
+    if (!place.geometry.photos.name.vicinity || !place.geometry.location) return;
     console.log('createMarker');
     console.log('place', place);
     const marker= new google.maps.Marker({
