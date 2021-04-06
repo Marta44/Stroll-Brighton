@@ -118,8 +118,8 @@ The purpose of the images is to showcase the main locations of the city and enco
 
 ## Testing
 I have checked the validity of the code with: 
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [JS HINT](https://jshint.com/)
 Full testing documentation can be found in [TESTING.md](https://github.com/Marta44/Stroll-Brighton/blob/master/TESTING.md) 
 ---
