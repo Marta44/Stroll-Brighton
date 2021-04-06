@@ -88,10 +88,11 @@ const placeType = [[artPlaces, "museum"], [outdoorPlaces, "park"], [cafePlaces, 
 placeType.forEach(function(option){
     option[0].onclick = function(){
         clearMarkers();
-        nearbySearch(option[1])
+        nearbySearch(option[1]);
     }
 })
 
+// Create a Bootstrap card for each place
 function displayPlaces(places) {
     places.forEach(place => {
         cardContainer.innerHTML = 
@@ -102,7 +103,7 @@ function displayPlaces(places) {
         <br>
         <h3>${place.vicinity}</h3>
         </div>`;
-    })
+    });
 
 }
 
@@ -133,7 +134,7 @@ function nearbySearch(placeType){
 }
 
 function createMarker(place){
-    if (!place.geometry.photos.name.vicinity || !place.geometry.location) return;
+    if (!place.geometry || !place.geometry.location) return;
     console.log('createMarker');
     console.log('place', place);
     const marker= new google.maps.Marker({
