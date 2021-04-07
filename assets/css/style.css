@@ -147,9 +147,9 @@ a{
     padding-top: 10px;
     padding-bottom: 50px;
 }
-.cardContainer, #card-places{
+.cardContainer{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(autofill, minmax(150px, 1fr));
     column-gap: 10px;
     justify-content: center;
     padding-top: 20px;
