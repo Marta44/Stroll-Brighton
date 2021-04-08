@@ -19,7 +19,8 @@ $(document).ready(function() {
             },
             480:{
                 items: 2,
-                nav:true
+                nav:true,
+                dots: false,
             },
             768:{
                 items: 3,
