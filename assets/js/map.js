@@ -9,6 +9,7 @@ var map = null;
 let generalMarker = [];
 var service;
 var cardContainer = document.getElementById("card-places");
+var cardMarkers = [];
 
 // Set the map limited to UK
 function initAutocomplete(){
@@ -88,18 +89,40 @@ const placeType = [[artPlaces, "museum"], [outdoorPlaces, "park"], [cafePlaces, 
 placeType.forEach(function(option){
     option[0].onclick = function(){
         clearMarkers();
+        clearResults();
         nearbySearch(option[1]);
     }
 })
 
+// Erase both markers and cards on click of another category
+function clearResults(){
+    cardContainer.innerHTML = "";
+    for (var i = 0; i < cardMarkers.length; i++) {
+        if (cardMarkers[i]) {
+            cardMarkers[i].setMap(null);
+        }
+    }
+    cardMarkers = [];
+}
+
 // Create a Bootstrap card for each place
 function displayPlaces(places) {
-    places.forEach(place => {
+    let placeSlice = places.slice(0, 6);
+    placeSlice.forEach(place => {
+        let image = "";
+        
+        if (place.photos) {
+            image = place.photos[0].getUrl();
+        }
+        else {
+            image = 'https://www.flaticon.com/premium-icon/icons/svg/1862/1862600.svg';
+        }
+
         cardContainer.innerHTML = 
         cardContainer.innerHTML + 
         `
         <div class="card">
-        <img src= ${place.photos} class="card-img-top">
+        <img src= "${image}" class="card-img-top">
         <h2>${place.name}</h2>
         <br>
         <h3>${place.vicinity}</h3>
@@ -139,10 +162,10 @@ function createMarker(place){
     if (!place.geometry || !place.geometry.location) return;
     console.log('createMarker');
     console.log('place', place);
-    const marker= new google.maps.Marker({
+    cardMarkers.push(new google.maps.Marker({
         map,
         position: place.geometry.location
-    });
+    }));
 }
 
 
