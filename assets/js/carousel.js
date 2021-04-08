@@ -4,7 +4,7 @@ and Owl Carousel documentation: https://owlcarousel2.github.io/OwlCarousel2/docs
 // Owl Carousel cards in tips section
 $(document).ready(function() {
     $('.attractionSlider').owlCarousel({
-        items: 3,
+        items: 4,
         margin: 10,
         nav: true,
         navText: ['<i class="fas fa-chevron-left" aria-label= "left arrow">', '<i class="fas fa-chevron-right" aria-label= "right arrow"></i>'],
@@ -24,7 +24,11 @@ $(document).ready(function() {
             },
             768:{
                 items: 3,
-                nav:true
+                nav:true,
+            },
+            1024:{
+                items:4,
+                nav:true,
             }
         }
     });

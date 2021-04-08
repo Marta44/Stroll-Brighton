@@ -62,11 +62,11 @@ More testing in [Google Map](#google-map).
 
 ## User Stories testing
 
-- 
+-
 
 ## Site Owner testing
 
-- 
+-
 
 ## Lighthouse developers tool
 
@@ -74,8 +74,8 @@ More testing in [Google Map](#google-map).
 
 ## Responsiveness
 
-- 
+-
 
 ## Cross Browser Testing
 
-- 
+-

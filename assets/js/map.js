@@ -97,13 +97,14 @@ function displayPlaces(places) {
     places.forEach(place => {
         cardContainer.innerHTML = 
         cardContainer.innerHTML + 
-        `<div class="row">
+        `
         <div class="card">
         <img src= ${place.photos} class="card-img-top">
         <h2>${place.name}</h2>
         <br>
         <h3>${place.vicinity}</h3>
-        </div>`;
+        </div>
+        `;
     });
 
 }
