@@ -1,4 +1,5 @@
 // Credit: Code Institute course materials for emailJs
+let emailjs;
 function sendMail(contactForm) {
     emailjs.send("Stroll-Brighton","CI-MS2", {
         "from_name":contactForm.fullname.value,
@@ -15,11 +16,11 @@ function sendMail(contactForm) {
         alert("Message successfully sent!", success);
     },
     // On error the browser alert window appears and the send button displays "Error!"
-    function (error){
+    function (error) {
         let sendBtn = document.getElementById("send-btn");
         sendBtn.innerHTML="Error!";
         alert("Error, Please fill the form again.", error);
     });
-    document.getElementById("contactForm").reset(); // Clear the form fields after submission
+    document.getElementById("contactForm").reset(); // Clear the form fields after the email has been sent
 return false; // Stop loading a new page
 }

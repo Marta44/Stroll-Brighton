@@ -106,7 +106,7 @@ function clearResults(){
 // Create a Bootstrap card for each place
 function displayPlaces(places) {
     // Select a portion of the elements in the array
-    let placeSlice = places.slice(0, 6);
+    let placeSlice = places.slice(0, 10);
     placeSlice.forEach(place => {
         let image = "";
         // Display a photo if present in the API data

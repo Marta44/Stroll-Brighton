@@ -251,7 +251,8 @@ How to run the code locally:
 - For Google Map I relied on this documentation: [autocomplete](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
 [nearby search](https://developers.google.com/maps/documentation/places/web-service/search#PlaceSearchStatusCodes)
 [place types](https://developers.google.com/maps/documentation/places/web-service/supported_types)
-[photo request](https://developers.google.com/maps/documentation/places/web-service/photos) 
+[photo request](https://developers.google.com/maps/documentation/javascript/places#places_photos)
+- To create a Bootstrap card and append it to a card container in the HTML I watched Aukje - byIlsa_lead lesson: [API lesson](https://us02web.zoom.us/rec/play/Aw0IkSi1ikccnYfGrUXJWZMTSAX6tDZISiVFQjKdz5bA6TMgXWsUcMW53ejeQ5blYYZ19nTA4IUr4wC9.ZSBObt8iXCkntmBr?autoplay=true)
 
 ### Contents
 
