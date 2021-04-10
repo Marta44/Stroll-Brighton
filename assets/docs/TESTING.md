@@ -77,7 +77,11 @@ More testing in [Google Map](#google-map).
 
 ## Lighthouse developers tool
 
--
+- I had a low score in the performance because I first loaded the images for the carousel in an high quality png format. I decided to change them into jpg format to increase the speed of their loading.
+- In the accessibility I have the warning that the owl dots buttons are not accessible for the screen readers. I tried to add aria-label="directional-dots" and aria-selected="true" to the button of the dotElement in the carousel but I didn't find a fix.
+I decided to leave the owl dots only on larger screens and not under the breakpoint of (max-width: 767.98px).
+![Desktop lighthouse](/assets/docs/testing-images/desktop-lighthouse.png)
+![Mobile lighthouse](/assets/docs/testing-images/mobile-lighthouse.png)
 
 ## Responsiveness
 

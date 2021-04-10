@@ -8,7 +8,7 @@ $(document).ready(function() {
         margin: 10,
         nav: true,
         navText: ['<i class="fas fa-chevron-left" aria-label= "left arrow">', '<i class="fas fa-chevron-right" aria-label= "right arrow"></i>'],
-        dotElement: ['<button role="button", aria-label="directional-dots"></button>'],
+        dotElement: ['<button role="button" aria-label="directional-dots" aria-selected="true"></button>'],
         autoplay: false,
         responsiveClass: true,
         responsive:{
