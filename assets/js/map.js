@@ -91,15 +91,15 @@ placeType.forEach(function(option){
         clearMarkers();
         clearResults();
         nearbySearch(option[1]);
-    }
-})
+    };
+});
 
 // Erase both markers and cards on click on another category
 function clearResults(){
     cardContainer.innerHTML = "";
     cardMarkers.forEach(function(cardMarkers){
         cardMarkers.setMap(null);
-    })
+    });
     cardMarkers = [];
 }
 

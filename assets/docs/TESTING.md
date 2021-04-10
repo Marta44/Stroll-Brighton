@@ -7,7 +7,7 @@ I have found these errors: the value of the for attribute in the label element d
 ![HTML-validation](/assets/docs/testing-images/html-validator-check1.png)
 ![HTML-validation](/assets/docs/testing-images/html-validator-check2.png)
 
-I fixed these errors and now the only warning left is that the section "Home" doesn't have any heading. I made this choice on purpose because the title "Stroll Brighton" is already present as logo in the navigation bar on the top-left. 
+I fixed these errors and now the only warning left is that the section "Home" doesn't have any heading. I made this choice on purpose because the title "Stroll Brighton" is already present as logo in the navigation bar on the top-left.
 
 ## CSS
 
@@ -16,7 +16,14 @@ I fixed these errors and now the only warning left is that the section "Home" do
 
 ## JavaScript
 
-- I scanned the JavaScript code with [JS HINT](https://jshint.com/) and 
+- I scanned the JavaScript code with [JS HINT](https://jshint.com/).
+- For the carousel and the hero image I had the warning of undefined $. I clicked on configure and selected the option that I was using JQuery, this removed the undefined $.
+![test code carousel](/assets/docs/testing-images/test-carousel.png)
+![test code hero image](/assets/docs/testing-images/test-zoom-hero-image.png)
+- I checked emailjs and I have two errors: one undefined variable: emailjs and one unused variable: sendMail. These are variables that are called from the html file.
+![test code of emailjs](/assets/docs/testing-images/test-sendEmailjs.png)
+- The first time I run the map code through JS HINT I had warnings that I missed semicolons on line 94, 95 and 102. I corrected these. I still have warnings about google variable undefined and initAutocomplete variable unused because I call it back in the script in the html file.
+![test code of the map](/assets/docs/testing-images/test-map.png)
 
 ## Manual functional testing
 

@@ -1,5 +1,4 @@
 // Credit: Code Institute course materials for emailJs
-let emailjs;
 function sendMail(contactForm) {
     emailjs.send("Stroll-Brighton","CI-MS2", {
         "from_name":contactForm.fullname.value,
