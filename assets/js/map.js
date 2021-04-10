@@ -94,30 +94,30 @@ placeType.forEach(function(option){
     }
 })
 
-// Erase both markers and cards on click of another category
+// Erase both markers and cards on click on another category
 function clearResults(){
     cardContainer.innerHTML = "";
-    for (var i = 0; i < cardMarkers.length; i++) {
-        if (cardMarkers[i]) {
-            cardMarkers[i].setMap(null);
-        }
-    }
+    cardMarkers.forEach(function(cardMarkers){
+        cardMarkers.setMap(null);
+    })
     cardMarkers = [];
 }
 
 // Create a Bootstrap card for each place
 function displayPlaces(places) {
+    // Select a portion of the elements in the array
     let placeSlice = places.slice(0, 6);
     placeSlice.forEach(place => {
         let image = "";
-        
+        // Display a photo if present in the API data
         if (place.photos) {
             image = place.photos[0].getUrl();
         }
+        // Display an icon as placeholder if the photo is not available
         else {
-            image = 'https://www.flaticon.com/premium-icon/icons/svg/1862/1862600.svg';
+            image = "assets/images/icon-no-image-available.png";
         }
-
+        // Append a Bootstrap card to the card container in html file
         cardContainer.innerHTML = 
         cardContainer.innerHTML + 
         `

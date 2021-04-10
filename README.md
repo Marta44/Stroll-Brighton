@@ -263,6 +263,7 @@ Contents and texts has been written by Marta Marassi and main source of informat
 - The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created if with [Canva](https://www.canva.com/design/DAEah1hBTKM/4NPEN5NRMarOmrCE6hnO7g/edit).
 - In the carousel in the tip section I used two pictures from [Pixabay](https://pixabay.com/it/photos/architettura-costruzione-2566173/) and [Pixabay](https://www.pexels.com/photo/brown-concrete-building-near-body-of-water-3224129/).
 - All the other pictures were taken by me.
+- I used an icon made by Darius Dan [Author Darius Dan](https://www.flaticon.com/authors/darius-dan) as placeholder if some of the photos in Places API are not available. It is from [Flaticon](https://www.flaticon.com). [Icon-no-image-available](https://www.flaticon.com/free-icon/no-photos_1983863?term=no%20image&related_id=1983863).
 - I created the Favorite Icon with [LogoMakr](https://logomakr.com/0vgmQT) and sized it with [Favicon](https://favicon.io/favicon-converter/)
 - I took inspiration from this website for the colours combination
 [Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
