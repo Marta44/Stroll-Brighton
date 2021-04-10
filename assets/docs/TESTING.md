@@ -85,7 +85,7 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Responsiveness
 
--
+- I tested my website different size resolutions with: [Mobi Ready](https://ready.mobi). I had a major fail about absolute measures in my CSS file. I fixed this using relative measures em for font-sizes instead of px.
 
 ## Cross Browser Testing
 
