@@ -126,11 +126,13 @@ function displayPlaces(places) {
 		cardContainer.innerHTML =
 			cardContainer.innerHTML +
         `
-        <div class="card d-flex">
+        <div class="card">
         <img src= "${image}" class="card-img-top">
+        <div class="card-body card-details">
         <h2>${place.name}</h2>
         <br>
         <h3>${place.vicinity}</h3>
+        </div>
         </div>
         `;
 	});
