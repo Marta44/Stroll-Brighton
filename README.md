@@ -21,7 +21,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 - "I want to use a map that autocomplete the names of the places I am looking for".
 - "I want to use a map which allows me to browse places by category".
 - "I want to see a map which provides relevant attractions and cultural places to visit".
-- "I want to use a map which shows me with a marker the location of the place I was looking for".
+- "I want to use a map which shows me with a marker and a label the location of the place I was looking for".
 - "I want to use my mobile phone to consult this website while I am strolling around the city".
 - "I want to join a social media community in Brighton where I can meet people or share my pictures".
 
@@ -29,10 +29,12 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 - I expect to navigate the website easily with a user friendly navigation bar.
 - I expect to interact with a map which guides me in the city.
-- I expect to find relevant information and contents about the main attractions of Brighton.
+- I expect to find relevant information, curiosities and contents about the main attractions of Brighton.
 
 ### Returning visitor goals
 
+- I want to look for a specific place using the search box.
+- I want to consult the map by place type, watch the photo of the place, name and vicinity to plan my visit.
 - I want to locate the social media links to join Brighton groups or get in touch with a local guide (Marta Marassi).
 - I want to address my enquires to Marta Marassi through a contact form.
 
@@ -43,7 +45,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 ## Site owner goals
 
-- I want to use the map as a regular user to explore new places in Brighton.
+- I want to use the map as a regular user to explore and find new places in Brighton.
 - I want to be contacted through a contact form to my personal email address, be able to guide tourists and give them suggestions.
 
 ## User Experience (UX)

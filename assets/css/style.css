@@ -278,11 +278,22 @@ footer{
 }
 /*--Media Queries--*/
 /*--Phones--*/
-footer{
-    bottom: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    overflow: hidden;
+@media (max-width: 575.98px){
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.375em;
+    }
+    p {
+        font-size: 1.125em;
+    }
+    footer{
+        bottom: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
 }
 /*--Landscape phones--*/
 @media screen and (max-width: 768px){
@@ -315,4 +326,3 @@ footer{
     }
 
 }
-/*--Tablets--*/
