@@ -4,26 +4,26 @@
 
 - The first time I checked the code with [W3C Markup Validation Service](https://validator.w3.org/).
 I have found these errors: the value of the for attribute in the label element didn't match the ID of the input element because I wrongly named the labels with capital letters while the IDs weren't. The other error was about the first child of the select element, an option element that was without a value attribute: I decided to add the placeholder option label "Select a tour".
-![HTML-validation](/assets/docs/testing-images/html-validator-check1.png)
-![HTML-validation](/assets/docs/testing-images/html-validator-check2.png)
+![HTML-validation](/assets/docs/testing-images/html-validator-check1.png "html-validation page1")
+![HTML-validation](/assets/docs/testing-images/html-validator-check2.png "html-validation page2")
 
 I fixed these errors and now the only warning left is that the section "Home" doesn't have any heading. I made this choice on purpose because the title "Stroll Brighton" is already present as logo in the navigation bar on the top-left.
 
 ## CSS
 
 - I ran the CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and the result was: no errors.
-![CSS-validation](/assets/docs/testing-images/Css-validator.png)
+![CSS-validation](/assets/docs/testing-images/Css-validator.png "css-validation")
 
 ## JavaScript
 
 - I scanned the JavaScript code with [JS HINT](https://jshint.com/).
 - For the carousel and the hero image I had the warning of undefined $. I clicked on configure and selected the option that I was using JQuery, this removed the undefined $.
-![test code carousel](/assets/docs/testing-images/test-carousel.png)
-![test code hero image](/assets/docs/testing-images/test-zoom-hero-image.png)
+![test code carousel](/assets/docs/testing-images/test-carousel.png "carousel-validation")
+![test code hero image](/assets/docs/testing-images/test-zoom-hero-image.png "hero-image-validation")
 - I checked emailjs and I have two errors: one undefined variable: emailjs and one unused variable: sendMail. These are variables that are called from the html file.
-![test code of emailjs](/assets/docs/testing-images/test-sendEmailjs.png)
+![test code of emailjs](/assets/docs/testing-images/test-sendEmailjs.png "emailjs-validation")
 - The first time I run the map code through JS HINT I had warnings that I missed semicolons on line 94, 95 and 102. I corrected these. I still have warnings about google variable undefined and initAutocomplete variable unused because I call it back in the script in the html file.
-![test code of the map](/assets/docs/testing-images/test-map.png)
+![test code of the map](/assets/docs/testing-images/test-map.png "map-validation")
 
 ## Manual functional testing
 
@@ -38,34 +38,34 @@ More testing in [Google Map](#google-map).
 ## Google Map
 
 - I tested the map component restrictions to "gb" trying to type in the input field "Berlin" and the result is positive as it doesn't appear in the autocomplete search.
-![Search-restriction-UK](/assets/docs/testing-images/search-restricted.png)
+![Search-restriction-UK](/assets/docs/testing-images/search-restricted.png "map-restriction")
 - An alert message appears when a user type some words, in this case I tried "north", and press Enter without selecting one of the suggested places in the autocomplete search box.
-![Google-map-alert-input](/assets/docs/testing-images/alert-message-google-map.png)
+![Google-map-alert-input](/assets/docs/testing-images/alert-message-google-map.png "map-alert")
 - I tested manually the four buttons (btn-art, btn-outdoor, btn-cafe, btn-amusement). On user's click they display the markers for the different types (museum, park, cafe, amusement_park) and create bootstrap cards containing photo, name and vicinity of these places.
 
 ### API Key
 
 - I checked the developer tool console and there were no errors.
 - I restricted the key to my Gitpod URL in addition to the live site on Github pages.
-![Key-restricted](/assets/docs/testing-images/API-restrictions-urls.png)
+![Key-restricted](/assets/docs/testing-images/API-restrictions-urls.png "api-key-restricted")
 - I added my credit card to the billing account.
-![Add-payment](/assets/docs/testing-images/added-payment-APIKey.png)
+![Add-payment](/assets/docs/testing-images/added-payment-APIKey.png "payment google map")
 
 ## EmailJS
 
 - The contact form validates the input fields before the form is submitted.
 - These are the parameters that I set in the EmailJS template:
-![EmailJS-parameters](/assets/docs/testing-images/parameters-emailjs.png)
+![EmailJS-parameters](/assets/docs/testing-images/parameters-emailjs.png "template parameters")
 - To access the value of the text input box I used the syntax: form. fieldname.value
 - For the drop-down list I defined a value for the option elements in the select element and .value returns that.
 - I tested the contact form and I have received the emails correctly.
-![EmailJS-testing](/assets/docs/testing-images/test-emailjs.png)
+![EmailJS-testing](/assets/docs/testing-images/test-emailjs.png "emailjs-test")
 - Once the email has been sent correctly the innerHTML text of the submit button turns from "Send" to "Sent!".
-![EmailJS-testing-submit](/assets/docs/testing-images/sent!-innerHTML.png)
+![EmailJS-testing-submit](/assets/docs/testing-images/sent!-innerHTML.png "contact form submit button")
 - Once the email has been sent successfully an alert window message appears. "Message successfully sent!".
-![EmailJS-testing-alert](/assets/docs/testing-images/alert-success.png)
+![EmailJS-testing-alert](/assets/docs/testing-images/alert-success.png "emailjs-alert")
 - If a user try to submit the form missing to fill one of the fields a message appears as all the fields have the required attribute. It prevents the form from being submitted if some fields are empty.
-![ContactForm-required-fields](/assets/docs/testing-images/fields-required.png)
+![ContactForm-required-fields](/assets/docs/testing-images/fields-required.png "fields required in contact form")
 
 ## User Stories testing
 
@@ -80,8 +80,8 @@ More testing in [Google Map](#google-map).
 - I had a low score in the performance because I first loaded the images for the carousel in an high quality png format. I decided to change them into jpg format to increase the speed of their loading.
 - In the accessibility I have the warning that the owl dots buttons are not accessible for the screen readers. I tried to add aria-label="directional-dots" and aria-selected="true" to the button of the dotElement in the carousel but I didn't find a fix.
 I decided to leave the owl dots only on larger screens and not under the breakpoint of (max-width: 767.98px).
-![Desktop lighthouse](/assets/docs/testing-images/desktop-lighthouse.png)
-![Mobile lighthouse](/assets/docs/testing-images/mobile-lighthouse.png)
+![Desktop lighthouse](/assets/docs/testing-images/desktop-lighthouse.png "desktop score")
+![Mobile lighthouse](/assets/docs/testing-images/mobile-lighthouse.png "mobile score")
 
 ## Responsiveness
 

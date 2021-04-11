@@ -1,9 +1,9 @@
 # Stroll Brighton
 
-![Postcard of Brighton](/assets/images/Postcard-Stroll-Brighton-min.png)
+![Postcard of Brighton](/assets/images/Postcard-Stroll-Brighton-min.png "Brighton postcard")
 The aim of this project is to guide tourists but also locals at the discovery of Brighton and its hidden places. Its aim is also to promote walkings and outdoor activities after lock-down.
 The project can be scalable and improved in the future adding events, festivals and concerts as are the core of this vibrant city. [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
-![Image responsive screens]()
+![Image responsive screens](/assets/images/ "I am responsive")
 
 ## Table of contents
 
@@ -206,7 +206,8 @@ I deployed the project following these steps:
 1. Log into GitHub
 2. Selected my repository: Marta44/Stroll-Brighton
 3. Clicked **Settings** on the navigation menu ![Settings](/assets/images/Settings-section.jpg "Settings Section")
-4. Scrolled down to GitHub Pages section ![GitHub Pages](/assets/images/GitHubpages-deployed.png "GitHub Pages")
+4. Scrolled down to GitHub Pages section. Pages settings now has its own dedicated tab. Click on the link and it opens GitHub Pages:
+![GitHub Pages](/assets/images/GitHubpages-deployed.png "GitHub Pages")
 5. I selected the master branch in the publishing **Source** dropdown menu and pressed **Save**
 6. The website has been published to GitHub Pages and the page refreshed automatically generating my site URL: [Live deployed page](https://marta44.github.io/Stroll-Brighton/)
 7. The deployed site will update automatically If I bring changes with new commits.
