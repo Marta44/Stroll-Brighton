@@ -125,8 +125,8 @@ function displayPlaces(places) {
 		// Append a Bootstrap card to the card container in html file
 		cardContainer.innerHTML =
 			cardContainer.innerHTML +
-			`
-        <div class="card">
+        `
+        <div class="card d-flex">
         <img src= "${image}" class="card-img-top">
         <h2>${place.name}</h2>
         <br>

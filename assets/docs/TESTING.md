@@ -89,4 +89,4 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Cross Browser Testing
 
--
+- I tested the website on different browsers: Google Chrome, Safari, Opera and Firefox.

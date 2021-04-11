@@ -29,14 +29,14 @@ section{
 }
 h2{
     font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 40px;
+    font-size: 2em;
 }
 h3{
     font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 30px;
+    font-size: 1.75em;
 }
 p{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 /*--Navbar--*/
 .nav-container{
@@ -53,14 +53,14 @@ p{
 }
 .navbar-brand{
     font-family: 'Cabin Sketch', cursive;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 /*--Nav Links--*/
 a{  
     color: black;
     font-family: 'Gaegu', cursive;
-    font-size: 22px;
+    font-size: 1.375em;
 }
 .nav-item:hover{
     text-decoration: underline;
@@ -107,7 +107,7 @@ a{
     padding-top: 70px;
 }
 .search-label{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .button-places{
     display: -webkit-inline-box;
@@ -163,14 +163,6 @@ a{
     padding-top: 10px;
     padding-bottom: 50px;
 }
-.cardContainer{
-    display: grid;
-    grid-template-columns: repeat(autofill, minmax(150px, 1fr));
-    column-gap: 10px;
-    justify-content: center;
-    padding-top: 20px;
-    row-gap: 20px;
-}
 /*--Carousel--*/
 .attractionSlider{
     display: -webkit-box;
@@ -189,8 +181,9 @@ a{
        object-fit: cover;
     height: 50vh;
 }
+/*--Carousel navigation--*/
 .owl-nav{
-    font-size: 30px;
+    font-size: 1.875em;
     margin-top: 0;
 }
 /*--Booking section--*/
@@ -205,7 +198,7 @@ a{
     width:60%;
 }
 #send-btn{
-    font-size: 18px;
+    font-size: 1.125em;
     background-color: whitesmoke;
     border-color: black;
 }
@@ -226,7 +219,7 @@ footer{
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 18px;
+    font-size: 1.125em;
     font-family: 'Gaegu', cursive;
     padding-top: 15px;
 }
@@ -247,7 +240,7 @@ footer{
 }
 /*--Social media icons--*/
 .fab{
-    font-size: 27px;
+    font-size: 1.25em;
 }
 .fab:hover {
     -webkit-transform: scale(1.3);
