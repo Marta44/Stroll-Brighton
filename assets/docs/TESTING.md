@@ -1,9 +1,11 @@
 # Testing
 
+## Table of contents
+
 ## HTML
 
 - The first time I checked the code with [W3C Markup Validation Service](https://validator.w3.org/).
-I have found these errors: the value of the for attribute in the label element didn't match the ID of the input element because I wrongly named the former with capital letters while the latter wasn't. The other error was about the first child of the select element, an option element that was without a value attribute: I decided to add the placeholder option label "Select a tour".
+I have found these errors: the value of the for attribute in the label element didn't match the ID of the input element because I wrongly named the former with capital letters while the latter wasn't. The other error was about the first child of the select element,an option element that was without a value attribute: I decided to add the placeholder option label "Select a tour".
 ![HTML-validation](/assets/docs/testing-images/html-validator-check1.png "html-validation page1")
 ![HTML-validation](/assets/docs/testing-images/html-validator-check2.png "html-validation page2")
 

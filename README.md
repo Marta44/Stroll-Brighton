@@ -172,7 +172,10 @@ The purpose of the images is to showcase the main locations of the city and enco
 - The navigation bar is fixed to the top of the page and brings the users to the different sections.
 - The footer is fixed to the bottom of the page and provides copyright info at the bottom-left, social media pages icons (GitHub, LinkedIn, Facebook, Instagram) in the center, if clicked they bring the users to social media platforms opened on a different tab.
 - On the "Explore section" is present a Google Map API.
-- On the "Tips section" is present a description about the aim of the project and suggested places to visit.
+  - The map allows users to search a place by name. The search box auto completes the word inserted by the user.
+  - The map allows to browse the map by four categories (museum, park, cafe, amusement_park). It displays markers of their location and Bootstrap cards of 8/10 places with the photo, name and vicinity of this place.
+- On the "Tips section" is present a description about the aim of the project.
+- On the "Tips section" is present a carousel which displays the suggested places and links to their websites.
 - On the "Contact section" is present a form to get in touch with me.
 
 ### Features to add in the future
