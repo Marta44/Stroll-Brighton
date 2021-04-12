@@ -3,7 +3,7 @@
 ## HTML
 
 - The first time I checked the code with [W3C Markup Validation Service](https://validator.w3.org/).
-I have found these errors: the value of the for attribute in the label element didn't match the ID of the input element because I wrongly named the labels with capital letters while the IDs weren't. The other error was about the first child of the select element, an option element that was without a value attribute: I decided to add the placeholder option label "Select a tour".
+I have found these errors: the value of the for attribute in the label element didn't match the ID of the input element because I wrongly named the former with capital letters while the latter wasn't. The other error was about the first child of the select element, an option element that was without a value attribute: I decided to add the placeholder option label "Select a tour".
 ![HTML-validation](/assets/docs/testing-images/html-validator-check1.png "html-validation page1")
 ![HTML-validation](/assets/docs/testing-images/html-validator-check2.png "html-validation page2")
 
@@ -11,8 +11,8 @@ I fixed these errors and now the only warning left is that the section "Home" do
 
 ## CSS
 
-- I ran the CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and the result was: no errors.
-![CSS-validation](/assets/docs/testing-images/Css-validator.png "css-validation")
+- I ran the CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and there weren't errors.
+![CSS-validation](/assets/docs/testing-images/css-validator.png "css-validation")
 
 ## JavaScript
 
@@ -22,16 +22,16 @@ I fixed these errors and now the only warning left is that the section "Home" do
 ![test code hero image](/assets/docs/testing-images/test-zoom-hero-image.png "hero-image-validation")
 - I checked emailjs and I have two errors: one undefined variable: emailjs and one unused variable: sendMail. These are variables that are called from the html file.
 ![test code of emailjs](/assets/docs/testing-images/test-sendEmailjs.png "emailjs-validation")
-- The first time I run the map code through JS HINT I had warnings that I missed semicolons on line 94, 95 and 102. I corrected these. I still have warnings about google variable undefined and initAutocomplete variable unused because I call it back in the script in the html file.
+- The first time I run the map code through JS HINT I had warnings that I missed semicolons on line 99, 100 and 107. I corrected these. I still have warnings about google variable undefined and initAutocomplete variable unused because I call it back in the script in the html file.
 ![test code of the map](/assets/docs/testing-images/test-map.png "map-validation")
 
 ## Manual functional testing
 
-- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (orange, lightskyblue, lightgreen, lightcoral), the same colours of the correspondent section and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side.
+- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side.
 - **Hero-image**: when we scroll down the page using the scroll-bar or the keyboard arrows the hero-image zooms out and zooms in back again if we scroll up.
 - **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping.
 More testing in [Google Map](#google-map).
-- **Tips section**: the carousel is working as expected. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. In the carousel cards the links to the different pages suggested work as expected.
+- **Tips section**: the carousel is working as expected. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. In the cards in the "Tip section" the links to the places suggested work as expected and bring to their websites.
 - **Contact form**: trying to submit the form with all the fields empty an error message appears saying "fill out this field". Trying to insert an invalid email address an error message suggests which part of the email address is missing (@ .dot saying that the value is incomplete). I added the boolean attribute required to the fullname, email address, selection and text message fields so if they are not filled is not possible to send the email. Trying to fill out the form correctly the email is sent. More testing in [Emailjs](#emailjs).
 - **Footer**: The social media links get open in a new tab using target="_blank" and hovering over their icons they turn into the same colours used for the navigation links and transform their sizes slightly bigger. They also have a transition effect of the duration of three seconds when hovered. The footer is responsive and at the breakpoint of (max-width: 767.98px) the two columns are ordered vertically inverting the order of social media links and of the copyright. In this way the copyright appears at the bottom of the page.
 
@@ -39,17 +39,19 @@ More testing in [Google Map](#google-map).
 
 - I tested the map component restrictions to "gb" trying to type in the input field "Berlin" and the result is positive as it doesn't appear in the autocomplete search.
 ![Search-restriction-UK](/assets/docs/testing-images/search-restricted.png "map-restriction")
-- An alert message appears when a user type some words, in this case I tried "north", and press Enter without selecting one of the suggested places in the autocomplete search box.
+- An alert message (no details available for input: "name of the place") appears when a user type some words, in this case I tried "north", and press Enter without selecting one of the suggested places in the autocomplete search box.
 ![Google-map-alert-input](/assets/docs/testing-images/alert-message-google-map.png "map-alert")
 - I tested manually the four buttons (btn-art, btn-outdoor, btn-cafe, btn-amusement). On user's click they display the markers for the different types (museum, park, cafe, amusement_park) and create bootstrap cards containing photo, name and vicinity of these places.
+- If the user selects a new button the previous results are cleared before displaying the new category.
+- When a user selects a prediction from the autocomplete search box a marker is created and has a label with a title (the name of the place).
 
 ### API Key
 
 - I checked the developer tool console and there were no errors.
 - I restricted the key to my Gitpod URL in addition to the live site on Github pages.
-![Key-restricted](/assets/docs/testing-images/API-restrictions-urls.png "api-key-restricted")
+![Key-restricted](/assets/docs/testing-images/api-restrictions-urls.png "api-key-restricted")
 - I added my credit card to the billing account.
-![Add-payment](/assets/docs/testing-images/added-payment-APIKey.png "payment google map")
+![Add-payment](/assets/docs/testing-images/added-payment.png "payment google map")
 
 ## EmailJS
 
@@ -69,11 +71,11 @@ More testing in [Google Map](#google-map).
 
 ## User Stories testing
 
--
+- 
 
 ## Site Owner testing
 
--
+- 
 
 ## Lighthouse developers tool
 

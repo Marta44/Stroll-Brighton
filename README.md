@@ -1,6 +1,6 @@
 # Stroll Brighton
 
-![Postcard of Brighton](/assets/images/Postcard-Stroll-Brighton-min.png "Brighton postcard")
+![Postcard of Brighton](/assets/images/postcard-stroll-brighton.png "Brighton postcard")
 The primary aim of this project is to create a website that provides information about selected venues and attractions in the Brighton area and also offers the services of a tourist guide. The secondary aim of the website is also to allow users to join a social media community in Brighton where they can meet people and share their pictures via Facebook or Instagram.
 The project can be scalable and improved in the future adding events, festivals and concerts, which are the core of this vibrant city. [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
 ![Image responsive screens](/assets/images/ "I am responsive")
@@ -145,7 +145,7 @@ The website displays in an unique page divided into four sections. I created wir
 
 Colours scheme:
 I have used pastel colours which are reminiscent of typical Brighton houses.
-I took inspiration from this palette: ![Pastel colors palette](/assets/images/UXcolors-palette.png "Pastel colors")
+I took inspiration from this palette: ![Pastel colors palette](/assets/images/ux-colors-palette.png "Pastel colors")
 
 - Tutu: #fddfdf for the explore section
 - Frosted Mint: #defde0 for the tips section
@@ -253,9 +253,9 @@ I deployed the project following these steps:
 
 1. Log into GitHub
 2. Selected my repository: Marta44/Stroll-Brighton
-3. Clicked **Settings** on the navigation menu ![Settings](/assets/images/Settings-section.jpg "Settings Section")
+3. Clicked **Settings** on the navigation menu ![Settings](/assets/images/settings-section.jpg "Settings Section")
 4. Scrolled down to GitHub Pages section. Pages settings now has its own dedicated tab. Click on the link and it opens GitHub Pages:
-![GitHub Pages](/assets/images/GitHubpages-deployed.png "GitHub Pages")
+![GitHub Pages](/assets/images/githubpages-deployed.png "GitHub Pages")
 5. I selected the master branch in the publishing **Source** dropdown menu and pressed **Save**
 6. The website has been published to GitHub Pages and the page refreshed automatically generating my site URL: [Live deployed page](https://marta44.github.io/Stroll-Brighton/)
 7. The deployed site will update automatically If I bring changes with new commits.
@@ -269,7 +269,7 @@ How to run the code locally:
 - Clone
 - Download the ZIP file (allows you to extract the files on your local machine)
 
-![Clone or download Repo](/assets/images/clone-downloadRepo.png "Clone or Download Repository")
+![Clone or download Repo](/assets/images/clone-download-repo.png "Clone or Download Repository")
 3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/Stroll-Brighton.git'.
 4. Press Enter and a clone of this project will be created on your machine.
 5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin'. This deletes all references to the remote repository without removing the repository from the remote server.
