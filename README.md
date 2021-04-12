@@ -1,8 +1,8 @@
 # Stroll Brighton
 
 ![Postcard of Brighton](/assets/images/Postcard-Stroll-Brighton-min.png "Brighton postcard")
-The aim of this project is to guide tourists but also locals at the discovery of Brighton and its hidden places. Its aim is also to promote walkings and outdoor activities after lock-down.
-The project can be scalable and improved in the future adding events, festivals and concerts as are the core of this vibrant city. [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
+The primary aim of this project is to create a website that provides information about selected venues and attractions in the Brighton area and also offers the services of a tourist guide. The secondary aim of the website is also to allow users to join a social media community in Brighton where they can meet people and share their pictures via Facebook or Instagram.
+The project can be scalable and improved in the future adding events, festivals and concerts, which are the core of this vibrant city. [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
 ![Image responsive screens](/assets/images/ "I am responsive")
 
 ## Table of contents
@@ -11,76 +11,86 @@ The project can be scalable and improved in the future adding events, festivals 
 
 ## Overview
 
-> This is an interactive front-end site that allows users to search for locations, activities and what to do in the city of Brighton UK. What makes this project different from many other websites is the possibility to address me enquires through a contact form and have a local tourist guide which can give you information and suggestions.
+> This is an interactive front-end site that allows users to search for locations, activities and things to do in the city of Brighton (UK). What makes this project different from many other websites is the possibility to contact me with enquires regarding the creation of a personalized tour. The personalized tour can be one of three categories: art, nature or fun. They can also contact me if they need suggestions or information.
 It is designed to be responsive on all devices (desktop screens, tablets and smartphones) with the awareness that a mobile phone will be the main users choice to browse this website.
 ---
 
 ## User Stories
 
-- "I want to get in touch with a local person who can welcome and guide me in the city".
-- "I want to use a map that autocomplete the names of the places I am looking for".
+- "I want to get in touch with a local person who can guide me around the city".
+- "I want to use a map that auto completes the names of the places I am looking for".
 - "I want to use a map which allows me to browse places by category".
-- "I want to see a map which provides relevant attractions and cultural places to visit".
-- "I want to use a map which shows me with a marker and a label the location of the place I was looking for".
-- "I want to use my mobile phone to consult this website while I am strolling around the city".
-- "I want to join a social media community in Brighton where I can meet people or share my pictures".
+- "I want to see a map which displays relevant attractions and cultural places to visit".
+- "I want to use a map which displays me the location of the place I am searching for with a label and a marker".
+- "I want to access this website using my mobile phone while I am strolling around the city".
+- "I want to join a social media community in Brighton on Facebook and/or Instagram where I can meet people and share my pictures".
+- "I want to be able to contact Marta via GitHub profile and/or LinkedIn profile".
 
 ### First time visitor goals
 
 - I expect to navigate the website easily with a user friendly navigation bar.
 - I expect to interact with a map which guides me in the city.
-- I expect to find relevant information, curiosities and contents about the main attractions of Brighton.
+- I expect to find relevant information and contents about the main attractions of Brighton.
 
 ### Returning visitor goals
 
 - I want to look for a specific place using the search box.
-- I want to consult the map by place type, watch the photo of the place, name and vicinity to plan my visit.
+- I want to use the place type category facility of the map to plan my visit and refine my searches.
 - I want to locate the social media links to join Brighton groups or get in touch with a local guide (Marta Marassi).
-- I want to address my enquires to Marta Marassi through a contact form.
+- I want to contact Marta Marassi directly filling a contact form and send an email.
 
 ### Frequent visitor goals
 
 - I want to use this website to discover new places, attractions and activities.
-- I want to rely on a local person who can give me assistance or ideas about what to do in the city.
+- I want to become an active part of the "Stroll Brighton" community by utilizing the social media.  
+- I want to rely on a local person who can give me assistance or ideas about things to do in the city.
+- I want to develop a professional relationship with Marta Marassi.
 
 ## Site owner goals
 
 - I want to use the map as a regular user to explore and find new places in Brighton.
 - I want to be contacted through a contact form to my personal email address, be able to guide tourists and give them suggestions.
+- I want to develop a "Stroll Brighton" community.
 
 ## User Experience (UX)
 
 ### The target audience of this website
 
-- A large demographic range of individuals both local and international tourists. The attractions displayed are heterogeneous to diversify the offer and please different age brackets.
+- A large demographic range of individuals:
+- non Brighton residents.
+- local residents.
+- international tourists.
+- The attractions displayed are heterogeneous to diversify the offer and please different age brackets.
 
 ### Users of this site are looking for
 
-- A local personal guide who can give them advices and hints about Brighton.
-- A website where they can find suggested locations but also discover their own favorite ones.
+- A personal guide to give them relevant suggestions and advices about Brighton.
+- A website where they can search and find places using an interactive map.
+- A website where they can find tips and suggestions about what to visit.
 
 ## 1. Strategy
 
 ### The business goals of this website
 
 - Showcase the main attractions of Brighton divided into four categories: art sites, outdoor places(mainly parks), cafés and amusement parks.
-- Be contacted by users and, as I studied art and I am passionate about it, guide them to visit cultural places and art sites in the city.
+- Provide in the tip section links to local businesses and attractions websites.
+- Be contactable to users. Having studied art I wish to guide them to visit cultural places and art sites in the city.
 
 ### The customer goals
 
-- Discover and walk to new places in Brighton reading Marta's favorites.
-- Read some interesting contents and curiosities about the city.
-- Have someone local who they can rely on and ask information.
+- Discover new places in Brighton using "My Tips" section.
+- Read interesting content about the city.
+- Be able to contact someone local (Marta) to ask for information.
 - Be guided by a map but also be able to discover their own favorite places.
 
 ## 2. Scope
 
-The scope of this project is to guide users at the discovery of the city of Brighton and keep them engaged using a map or getting in touch with me. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
+The scope of this project is to guide users at the discovery of the city of Brighton and keep them engaged using an interactive map or getting in touch with me. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
 
 - Clarity.
 - Usability.
 - Respect users expectations and confidence.
-- Design appeal that invokes the pastel colours of the city of Brighton.
+- Appealing design that invokes the pastel colours of the city of Brighton.
 
 ## 3. Structure
 
@@ -98,23 +108,23 @@ The website displays in an unique page divided into four sections. I created wir
 
 ## 5. Surface
 
-Colours:
-For the sections I choose pastel colours which reminds the typical Brighton houses.
+Colours scheme:
+I have used pastel colours which are reminiscent of typical Brighton houses.
 I took inspiration from this palette: ![Pastel colors palette](/assets/images/UXcolors-palette.png "Pastel colors")
 
 - Tutu: #fddfdf for the explore section
 - Frosted Mint: #defde0 for the tips section
 - Alice Blue: #def3fd for the booking section
 For the navigation bar and the footer I choose a Whitesmoke background (#f5f5f5) as it is neutral and in contrast with the colorful sections.
-For the navigation and footer links I used colors: orange, lightcoral, lightgreen and lightskyblue because provide enough visibility and readability.
+For the navigation and footer links: Orange, Lightcoral, Lightgreen and Lightskyblue because provide enough visibility and readability.
 
 Typography:
 
-- For the Logo I used "Cabin Sketch" Google Font because is artistic and has the texture of a doodle.
-- For the main text and contents I choose "Ganja Flower" Google Font because I have found it fancy and easy to read.
-- For the Headings I choose "Annie Use Your Telescope" Google Font because seems an hand writing font and pairs with "Ganja Flower".
+- For the Logo I used "Cabin Sketch" Google Font because is artistic and has aesthetical appearance of a doodle.
+- For the main text and contents I chose "Ganja Flower" Google Font because it is user friendly.
+- For the headings I chose "Annie Use Your Telescope" Google Font because it is an hand writing font and pairs with "Ganja Flower".
 Images:
-The images have been shot by me (except for the home page photograph, credited in media) and selected to be eye-catching, interesting and engaging. I choose this favorite icon because reminds the famous Brighton beach huts.
+All the images not taken by myself have been credited in "Media". They have been selected to be eye-catching, interesting and engaging. I chose the "favorite icon" because it is reminiscent of the famous Brighton beach huts.
 The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
 
 ---
@@ -126,13 +136,14 @@ The purpose of the images is to showcase the main locations of the city and enco
 - An unique scrolling page divided into four sections (home-explore-tips-booking).
 - The navigation bar is fixed to the top of the page and brings the users to the different sections.
 - The footer is fixed to the bottom of the page and provides copyright info at the bottom-left, social media pages icons (GitHub, LinkedIn, Facebook, Instagram) in the center, if clicked they bring the users to social media platforms opened on a different tab.
-- On the "Explore section" is present a Google Map API
+- On the "Explore section" is present a Google Map API.
 - On the "Tips section" is present a description about the aim of the project and suggested places to visit.
 - On the "Contact section" is present a form to get in touch with me.
 
 ### Features to add in the future
 
 - In the "Tips section" in the future I could add other suggestions especially when will reopen the venues for concerts and events in Brighton.
+- I would like to develop a forum where "Stroll  Brighton" users can present themselves, exchange experiences, share ideas and create an online community.
 
 ## Technologies Used
 
@@ -185,7 +196,7 @@ Full testing documentation can be found in [TESTING.md](https://github.com/Marta
 
 ### Bugs and challenges during the project
 
-- Emailjs stopped working when I merged into the master branch the owl carousel branch. After I reordered the scripts in this order: jquery,  popper, bootstrap, google map, emailjs and then my scripts it worked again.
+- EmailJS stopped working when I merged the owl carousel branch into the master branch. I rearranged the scripts in this order: jquery,  popper, bootstrap, google map, emailjs. As a result of this action the problem was fixed.
 - For me has been a challenge to understand how to loop through the four types of places and I have to thank my Mentor Ignatius Ukwuoma to have shown me how to build sub-arrays into an array and loop through the results with a for each loop.
 
 ---
