@@ -85,7 +85,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 - I want to use the map as a regular user to explore and find new places in Brighton.
 - I want to be contacted through a contact form to my personal email address, be able to guide tourists and give them suggestions.
-- I want to develop a "Stroll Brighton" community.
+- I want users to click on the links of the recommended places and access to their websites.
 
 ## User Experience (UX)
 
@@ -181,7 +181,7 @@ The purpose of the images is to showcase the main locations of the city and enco
 ### Features to add in the future
 
 - In the "Tips section" in the future I could add other suggestions especially when will reopen the venues for concerts and events in Brighton.
-- I would like to develop a forum where "Stroll  Brighton" users can present themselves, exchange experiences, share ideas and create an online community.
+- I would like to develop a forum where "Stroll  Brighton" users can present themselves, exchange experiences, share ideas and create an online community. Python skills required.
 
 ## Technologies Used
 
