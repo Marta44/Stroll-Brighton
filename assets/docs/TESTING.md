@@ -89,8 +89,9 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Responsiveness
 
-- I tested my website different size resolutions with: [Mobi Ready](https://ready.mobi). I had a major fail about absolute measures in my CSS file. I fixed this using relative measures em for font-sizes instead of px.
+- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on JioPhone2 (240x320px) and on Microsoft Lumia 550 (640x360px) the vicinity element inside the Bootstrap cards wasn't responsive and was coming out of its bottom border. I fixed this using display: grid in the card-body and increasing the height to 50vh, the same height of the card-img-top.
 
 ## Cross Browser Testing
 
 - I tested the website on different browsers: Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
+- Viewed on my device an iPhone 7.

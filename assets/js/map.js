@@ -129,9 +129,9 @@ function displayPlaces(places) {
         <div class="card">
         <img src= "${image}" class="card-img-top">
         <div class="card-body card-details">
-        <h2>${place.name}</h2>
+        <h3>${place.name}</h3>
         <br>
-        <h3>${place.vicinity}</h3>
+        <p>${place.vicinity}</p>
         </div>
         </div>
         `;
