@@ -15,7 +15,7 @@ The project can be scalable and improved in the future adding events, festivals 
     + [Returning visitor goals](#returning-visitor-goals)
     + [Frequent visitor goals](#frequent-visitor-goals)
   * [Site owner goals](#site-owner-goals)
-  * [User Experience (UX)](#user-experience--ux-)
+  * [User Experience](#user-experience)
     + [The target audience of this website](#the-target-audience-of-this-website)
     + [Users of this site are looking for](#users-of-this-site-are-looking-for)
   * [1. Strategy](#1-strategy)
@@ -30,7 +30,7 @@ The project can be scalable and improved in the future adding events, festivals 
     + [Features to add in the future](#features-to-add-in-the-future)
   * [Technologies Used](#technologies-used)
     + [Languages Used](#languages-used)
-    + [Frameworks, Libraries and Integrations Used](#frameworks--libraries-and-integrations-used)
+    + [Frameworks libraries and integrations used](#frameworks-libraries-and-integrations-used)
     + [Workspace and version control](#workspace-and-version-control)
     + [IDE extensions installed in Gitpod](#ide-extensions-installed-in-gitpod)
   * [Testing](#testing)
@@ -87,7 +87,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 - I want to be contacted through a contact form to my personal email address, be able to guide tourists and give them suggestions.
 - I want users to click on the links of the recommended places and access to their websites.
 
-## User Experience (UX)
+## User Experience
 
 ### The target audience of this website
 

@@ -9,6 +9,9 @@ $(window).scroll(function(event){
     });
 });
 
-
+// Toggle menu closes after the user clicks a link
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 
