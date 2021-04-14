@@ -138,7 +138,7 @@ a{
         -ms-flex-pack: center;
             justify-content: center;
 }
-/*--Place cards--*/
+/*--Place type cards--*/
 .cardContainer #card-places{
     display: -ms-grid;
     display: grid;
@@ -156,12 +156,14 @@ a{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/*--Place type cards photo--*/
 .card-img-top{
     -o-object-fit: cover;
        object-fit: cover;
     height: 50vh;
     width: 100%;
 }
+/*--Place type cards-body with name and vicinity--*/
 .card-details{
     background-color: whitesmoke;
     display: -ms-grid;
@@ -179,7 +181,7 @@ a{
     padding-top: 10px;
     padding-bottom: 50px;
 }
-/*--Carousel--*/
+/*--Carousel cards with my suggestions--*/
 .attractionSlider{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -209,9 +211,11 @@ a{
     padding-top: 70px;
     padding-bottom: 20px;
 }
+/*--Contact form--*/
 .form-container{
     width:60%;
 }
+/*--Submit button--*/
 #send-btn{
     font-size: 1.125em;
     background-color: whitesmoke;
@@ -326,5 +330,5 @@ footer{
         padding-bottom: 10px;
         width: 90%;
     }
-
+    
 }

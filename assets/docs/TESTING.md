@@ -2,6 +2,21 @@
 
 ## Table of contents
 
+- [Testing](#testing)
+  * [Table of contents](#table-of-contents)
+  * [HTML](#html)
+  * [CSS](#css)
+  * [JavaScript](#javascript)
+  * [Manual functional testing](#manual-functional-testing)
+  * [Google Map](#google-map)
+    + [API Key](#api-key)
+  * [EmailJS](#emailjs)
+  * [User Stories testing](#user-stories-testing)
+  * [Site Owner testing](#site-owner-testing)
+  * [Lighthouse developers tool](#lighthouse-developers-tool)
+  * [Responsiveness](#responsiveness)
+  * [Cross Browser Testing](#cross-browser-testing)
+
 ## HTML
 
 - The first time I checked the code with [W3C Markup Validation Service](https://validator.w3.org/).
@@ -61,9 +76,8 @@ More testing in [Google Map](#google-map).
 - These are the parameters that I set in the EmailJS template:
 ![EmailJS-parameters](/assets/docs/testing-images/parameters-emailjs.png "template parameters")
 - To access the value of the text input box I used the syntax: form. fieldname.value
-- For the drop-down list I defined a value for the option elements in the select element and .value returns that.
+- For the drop-down list I defined a value for the option elements in the select element and .value returns this.
 - I tested the contact form and I have received the emails correctly.
-![EmailJS-testing](/assets/docs/testing-images/test-emailjs.png "emailjs-test")
 - Once the email has been sent correctly the innerHTML text of the submit button turns from "Send" to "Sent!".
 ![EmailJS-testing-submit](/assets/docs/testing-images/sent!-innerHTML.png "contact form submit button")
 - Once the email has been sent successfully an alert window message appears. "Message successfully sent!".
@@ -106,6 +120,12 @@ More testing in [Google Map](#google-map).
 
 - In the carousel I provide some links that bring the user to the web pages of the business/attraction.
 - If clicked the links bring the user to the corresponding URL, opening in a different tab.
+
+> "I want to be contacted through a contact form to my personal email address"
+
+- Once the contact form is filled correctly and the send button is pressed I receive an email to my personal email address.
+The user receives a positive or negative feedback as the send button displays a text ("sent!" or "error!") and an alert window message appears.
+![EmailJS-testing](/assets/docs/testing-images/test-emailjs.png "emailjs-test")
 
 ## Lighthouse developers tool
 
