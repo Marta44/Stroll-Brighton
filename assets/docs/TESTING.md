@@ -44,7 +44,7 @@ I fixed these errors and now the only warning left is that the section "Home" do
 
 ## Manual functional testing
 
-- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side.
+- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side. When the user clicks the toggle menu and selects a link it brings to the corresponding section and hides the collapsible element as I used hide() method.
 - **Hero-image**: when we scroll down the page using the scroll-bar or the keyboard arrows the hero-image zooms out and zooms in back again if we scroll up.
 - **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping.
 More testing in [Google Map](#google-map).
