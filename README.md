@@ -120,7 +120,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 ## 2. Scope
 
-The scope of this project is to guide users at the discovery of the city of Brighton and keep them engaged using an interactive map or getting in touch with me. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
+The scope of this project is to guide users to help them discover of the city of Brighton, keep them engaged by using an interactive map and contacting me via email. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
 
 - Clarity.
 - Usability.
@@ -301,7 +301,7 @@ How to run the code locally:
 
 - I used [jQuery plugin developed by Jason D'Oyley](https://www.jqueryscript.net/zoom/zoom-image-scrolling.html) to zoom out the hero image when the user scroll down the page.
 - For Google Map I relied on this documentation: [autocomplete](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
-[nearby search](https://developers.google.com/maps/documentation/places/web-service/search#PlaceSearchStatusCodes)
+[nearby search](https://developers.google.com/maps/documentation/javascript/places#place_searches)
 [place types](https://developers.google.com/maps/documentation/places/web-service/supported_types)
 [photo request](https://developers.google.com/maps/documentation/javascript/places#places_photos)
 - To create a Bootstrap card and append it to a card container in the HTML I watched Aukje - byIlsa_lead lesson: [API lesson](https://us02web.zoom.us/rec/play/Aw0IkSi1ikccnYfGrUXJWZMTSAX6tDZISiVFQjKdz5bA6TMgXWsUcMW53ejeQ5blYYZ19nTA4IUr4wC9.ZSBObt8iXCkntmBr?autoplay=true)

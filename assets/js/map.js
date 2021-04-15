@@ -8,7 +8,7 @@ var autocomplete = null;
 var map = null;
 let generalMarker = [];
 var service;
-var cardContainer = document.getElementById("card-places");
+var cardPlaces = document.getElementById("card-places");
 var cardMarkers = [];
 
 // Set the map limited to UK
@@ -101,7 +101,7 @@ placeType.forEach(function(option) {
 
 // Erase both markers and cards on click on another category
 function clearResults() {
-	cardContainer.innerHTML = "";
+	cardPlaces.innerHTML = "";
 	cardMarkers.forEach(function(cardMarkers) {
 		cardMarkers.setMap(null);
 	});
@@ -123,14 +123,15 @@ function displayPlaces(places) {
 			image = "assets/images/icon-no-image-available.png";
 		}
 		// Append a Bootstrap card to the card container in html file
-		cardContainer.innerHTML =
-			cardContainer.innerHTML +
+		cardPlaces.innerHTML =
+			cardPlaces.innerHTML +
         `
         <div class="card">
+        <div class="carousel-image">
         <img src= "${image}" class="card-img-top">
-        <div class="card-body card-details">
+        </div>
+        <div class="carousel-content card-body">
         <h3>${place.name}</h3>
-        <br>
         <p>${place.vicinity}</p>
         </div>
         </div>
@@ -166,9 +167,8 @@ function nearbySearch(placeType) {
 }
 
 function createMarker(place) {
-	if (!place.geometry || !place.geometry.location) return;
-	console.log('createMarker');
-	console.log('place', place);
+    if (!place.geometry || !place.geometry.location) return;
+    console.log("place", place);
 	cardMarkers.push(new google.maps.Marker({
 		map,
 		position: place.geometry.location
