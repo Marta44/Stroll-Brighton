@@ -8,17 +8,15 @@ function sendMail(contactForm) {
     })
 
 .then (
-    // On success the browser alert window appears and the send button displays "Sent!"
+    // On success a modal alert message appears and the submit button displays "Sent!"
     function (success) {
         let sendBtn = document.getElementById("send-btn");
         sendBtn.innerHTML="Sent!";
-        alert("Message successfully sent!", success);
+        $("#modalSent").modal("toggle");
     },
-    // On error the browser alert window appears and the send button displays "Error!"
+    // On error a modal alert message appears"
     function (error) {
-        let sendBtn = document.getElementById("send-btn");
-        sendBtn.innerHTML="Error!";
-        alert("Error, Please fill the form again.", error);
+        $("#modalError").modal("toggle");
     });
     document.getElementById("contactForm").reset(); // Clear the form fields after the email has been sent
 return false; // Stop loading a new page

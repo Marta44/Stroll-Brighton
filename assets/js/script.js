@@ -9,9 +9,7 @@ $(window).scroll(function(event){
     });
 });
 
-/* Credit: Toggle menu closes after the user clicks a link
-https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
-*/
+// Toggle menu closes after the user clicks on a link
 $(".navbar-nav>li>a").on("click", function(){
     $(".navbar-collapse").collapse("hide");
 });

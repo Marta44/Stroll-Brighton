@@ -8,7 +8,7 @@ var autocomplete = null;
 var map = null;
 let generalMarker = [];
 var service;
-var cardPlaces = document.getElementById("card-places");
+var cardContainer = document.getElementById("card-places");
 var cardMarkers = [];
 
 // Set the map limited to UK
@@ -101,7 +101,7 @@ placeType.forEach(function(option) {
 
 // Erase both markers and cards on click on another category
 function clearResults() {
-	cardPlaces.innerHTML = "";
+	cardContainer.innerHTML = "";
 	cardMarkers.forEach(function(cardMarkers) {
 		cardMarkers.setMap(null);
 	});
@@ -123,16 +123,16 @@ function displayPlaces(places) {
 			image = "assets/images/icon-no-image-available.png";
 		}
 		// Append a Bootstrap card to the card container in html file
-		cardPlaces.innerHTML =
-			cardPlaces.innerHTML +
+		cardContainer.innerHTML =
+			cardContainer.innerHTML +
         `
         <div class="card">
         <div class="carousel-image">
         <img src= "${image}" class="card-img-top">
         </div>
         <div class="carousel-content card-body">
-        <h3>${place.name}</h3>
-        <p>${place.vicinity}</p>
+        <h3 class="title">${place.name}</h3>
+        <p class="text">${place.vicinity}</p>
         </div>
         </div>
         `;
