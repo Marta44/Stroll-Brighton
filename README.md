@@ -136,10 +136,10 @@ Social media icons in the footer are meant to be a way to join Brighton communit
 
 The website displays in an unique page divided into four sections. I created wireframes for every section:
 
-- [Home page wireframe]()
-- [Explore page wireframe]()
-- [Tips page wireframe]()
-- [Booking page wireframe]()
+- [Home page wireframe](https://github.com/Marta44/Stroll-Brighton/assets/docs/wireframes/home-page.pdf)
+- [Explore page wireframe](https://github.com/Marta44/Stroll-Brighton/assets/docs/wireframes/explore-page.pdf)
+- [Tips page wireframe](https://github.com/Marta44/Stroll-Brighton/assets/docs/wireframes/tips-page.pdf)
+- [Booking page wireframe](https://github.com/Marta44/Stroll-Brighton/assets/docs/wireframes/booking-page.pdf)
 
 ## 5. Surface
 
