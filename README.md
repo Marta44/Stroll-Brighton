@@ -3,7 +3,7 @@
 ![Postcard of Brighton](/assets/images/postcard-stroll-brighton.png "Brighton postcard")
 The primary aim of this project is to create a website that provides information about selected venues and attractions in the Brighton area and also offers the services of a tourist guide. The secondary aim of the website is also to allow users to join a social media community in Brighton where they can meet people and share their pictures via Facebook or Instagram.
 The project can be scalable and improved in the future adding events, festivals and concerts, which are the core of this vibrant city. [View the live project in GitHub Pages](https://marta44.github.io/Stroll-Brighton/)
-![Image responsive screens](/assets/images/ "I am responsive")
+![Image responsive screens](/assets/images/responsive-test.png "I am responsive")
 
 ## Table of contents
 
