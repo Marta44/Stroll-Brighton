@@ -49,7 +49,8 @@ I fixed these errors and now the only warning left is that the section "Home" do
 - **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping.
 More testing in [Google Map](#google-map).
 - **Tips section**: the carousel is working as expected. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. In the cards in the "Tip section" the links to the places suggested work as expected and bring to their websites.
-- **Contact form**: trying to submit the form with all the fields empty an error message appears saying "fill out this field". Trying to insert an invalid email address an error message suggests which part of the email address is missing (@ .dot saying that the value is incomplete). I added the boolean attribute required to the fullname, email address, selection and text message fields so if they are not filled is not possible to send the email. The select element is working as expected and provides three options in a dropdown list: art tour, nature tour and fun tour. Trying to fill out the form correctly the email is sent. More testing in [Emailjs](#emailjs).
+- **Contact form**: trying to submit the form with all the fields empty an error message appears saying "fill out this field". Trying to insert an invalid email address an error message suggests which part of the email address is missing (@ .dot saying that the value is incomplete). I added the boolean attribute required to the fullname, email address, selection and text message fields so if they are not filled is not possible to send the email. The select element is working as expected and provides three options in a dropdown list: art tour, nature tour and fun tour. Trying to fill out the form correctly the email is sent. The user receives a positive or negative feedback upon submission through a modal alert message. The modal works as expected, it closes using the button "Close" or the cross on the top-right.
+More testing in [Emailjs](#emailjs).
 - **Footer**: The social media links get open in a new tab using target="_blank" and hovering over their icons they turn into the same colours used for the navigation links and transform their sizes slightly bigger. They also have a transition effect of the duration of three seconds when hovered. The footer is responsive and at the breakpoint of (max-width: 767.98px) the two columns are ordered vertically inverting the order of social media links and of the copyright. In this way the copyright appears at the bottom of the page.
 
 ## Google Map
@@ -75,13 +76,15 @@ More testing in [Google Map](#google-map).
 - The contact form validates the input fields before the form is submitted.
 - These are the parameters that I set in the EmailJS template:
 ![EmailJS-parameters](/assets/docs/testing-images/parameters-emailjs.png "template parameters")
-- To access the value of the text input box I used the syntax: form. fieldname.value
+- To access the value of the text input box I used the syntax: form.fieldname.value
 - For the drop-down list I defined a value for the option elements in the select element and .value returns this.
 - I tested the contact form and I have received the emails correctly.
 - Once the email has been sent correctly the innerHTML text of the submit button turns from "Send" to "Sent!".
 ![EmailJS-testing-submit](/assets/docs/testing-images/sent!-innerHTML.png "contact form submit button")
-- Once the email has been sent successfully an alert window message appears. "Message successfully sent!".
-![EmailJS-testing-alert](/assets/docs/testing-images/alert-success.png "emailjs-alert")
+- Once the email has been sent successfully a Bootstrap modal alert message appears.
+![EmailJS-testing-modalSent](/assets/docs/testing-images/modal-sent-message.png "modal success")
+- If some error occurs another Bootstrap modal alert message appears.
+![EmailJS-testing-modalError](/assets/docs/testing-images/ "modal error")
 - If a user try to submit the form missing to fill one of the fields a message appears as all the fields have the required attribute. It prevents the form from being submitted if some fields are empty.
 ![ContactForm-required-fields](/assets/docs/testing-images/fields-required.png "fields required in contact form")
 
@@ -100,7 +103,7 @@ More testing in [Google Map](#google-map).
 - Four categories are provided(art sites, outdoor activities, cafè places, amusement).
 - Pressing the button it displays the markers of the corresponding place type and a Bootstrap card with the photo, name and vicinity of the place.
 - This helps the user to discover new places and plan the visit in advance looking at the vicinity between these places.
-![]()
+![Card-places](/assets/docs/testing-images/ "card places carousel")
 
 > "I want to get in touch with a local person who can guide me around the city"
 
@@ -142,4 +145,4 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 ## Cross Browser Testing
 
 - I tested the website on different browsers: Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
-- Viewed on my device an iPhone 7.
+- Viewed on the following physical devices: iPhone 7, iPad .

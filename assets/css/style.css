@@ -174,16 +174,21 @@ a{
 /*--Booking section--*/
 .booking-container{
     background-color: #fddfdf;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .booking-heading{
     padding-top: 150px;
     padding-bottom: 30px;
 }
 /*--Contact form--*/
-.booking-container{
-    align-content: center;
-    vertical-align: middle;
-}
 .form-container{
     width: 60%;
 }
@@ -192,6 +197,10 @@ a{
     font-size: 1.125em;
     background-color: whitesmoke;
     border-color: black;
+}
+/*--Modal heading--*/
+.modal-title{
+    font-weight: bold;
 }
 /*--Footer--*/
 footer{
@@ -281,10 +290,6 @@ footer{
     #map{
         width: 90%;
         margin-bottom: 20px;
-    }
-    .booking-heading{
-    padding-top: 200px;
-    padding-bottom: 5px;
     }
     .form-container{
     width:75%;
