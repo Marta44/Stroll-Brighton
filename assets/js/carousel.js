@@ -3,14 +3,15 @@ and Owl Carousel documentation: https://owlcarousel2.github.io/OwlCarousel2/docs
 */
 
 $(document).ready(function() {
-    let placesSlider = $("#card-places");
     let attractionSlider = $("#attraction-slider");
 
-    // Owl Carousel cards in explore section
-    placesSlider.owlCarousel({
+    // Owl Carousel cards in tips section
+    attractionSlider.owlCarousel({
         items: 4,
         margin: 10,
-        nav: false,
+        nav: true,
+        navText: ['<i class="fas fa-chevron-left" aria-label= "left arrow">', '<i class="fas fa-chevron-right" aria-label= "right arrow"></i>'],
+        dotElement: ['<button role="button" aria-label="directional-dots" aria-selected="true"></button>'],
         autoplay: false,
         responsiveClass: true,
         responsive:{
@@ -34,14 +35,16 @@ $(document).ready(function() {
             }
         }
     });
+});
 
-    // Owl Carousel cards in tips section
-    attractionSlider.owlCarousel({
+$(document).ready(function() {
+    let placesSlider = $("#card-places");
+
+    // Owl Carousel cards in explore section
+    placesSlider.owlCarousel({
         items: 4,
         margin: 10,
-        nav: true,
-        navText: ['<i class="fas fa-chevron-left" aria-label= "left arrow">', '<i class="fas fa-chevron-right" aria-label= "right arrow"></i>'],
-        dotElement: ['<button role="button" aria-label="directional-dots" aria-selected="true"></button>'],
+        nav: false,
         autoplay: false,
         responsiveClass: true,
         responsive:{

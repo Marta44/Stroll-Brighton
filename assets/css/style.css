@@ -150,12 +150,12 @@ a{
     padding-bottom: 50px;
 }
 /*--Carousel cards used for both Explore and Tip section--*/
-.owl-carousel {
+#attraction-slider #card-places {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.owl-carousel .card{
+#attraction-slider #card-places .card{
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -305,6 +305,5 @@ footer{
         -ms-flex-line-pack: center; 
         padding-bottom: 10px;
         width: 90%;
-    }
-    
+    }   
 }
