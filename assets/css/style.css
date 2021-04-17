@@ -202,7 +202,10 @@ a{
     background-color: whitesmoke;
     border-color: black;
 }
-/*--Modal heading--*/
+/*--Modal--*/
+.modal-body{
+    background-color: whitesmoke;
+}
 .modal-title{
     font-weight: bold;
 }
