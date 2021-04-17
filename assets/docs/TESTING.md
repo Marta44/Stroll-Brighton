@@ -48,7 +48,7 @@ I fixed these errors and now the only warning left is that the section "Home" do
 - **Hero-image**: when we scroll down the page using the scroll-bar or the keyboard arrows the hero-image zooms out and zooms in back again if we scroll up.
 - **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping.
 More testing in [Google Map](#google-map).
-- **Tips section**: the carousel is working as expected. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. In the cards in the "Tip section" the links to the places suggested work as expected and bring to their websites.
+- **Tips section**: the carousel is working as expected. The slider doesn't auto play and is triggered clicking on the left or right arrows or using the dots. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. Inside the cards of the "Tip section" the links to the places suggested are working as expected and are bringing to their websites.
 - **Contact form**: trying to submit the form with all the fields empty an error message appears saying "fill out this field". Trying to insert an invalid email address an error message suggests which part of the email address is missing (@ .dot saying that the value is incomplete). I added the boolean attribute required to the fullname, email address, selection and text message fields so if they are not filled is not possible to send the email. The select element is working as expected and provides three options in a dropdown list: art tour, nature tour and fun tour. Trying to fill out the form correctly the email is sent. The user receives a positive or negative feedback upon submission through a modal alert message. The modal works as expected, it closes using the button "Close" or the cross on the top-right.
 More testing in [Emailjs](#emailjs).
 - **Footer**: The social media links get open in a new tab using target="_blank" and hovering over their icons they turn into the same colours used for the navigation links and transform their sizes slightly bigger. They also have a transition effect of the duration of three seconds when hovered. The footer is responsive and at the breakpoint of (max-width: 767.98px) the two columns are ordered vertically inverting the order of social media links and of the copyright. In this way the copyright appears at the bottom of the page.
@@ -90,7 +90,7 @@ More testing in [Emailjs](#emailjs).
 
 ## User Stories testing
 
- > "I want to use a map that auto completes the names of the places I am looking for"
+> "I want to use a map that auto completes the names of the places I am looking for"
 
 - As soon as the user starts to type a place the search box auto completes the word.
 - The search is restricted to Great Britain. This avoid misleading researches of places with the same name somewhere else in the world.
@@ -140,9 +140,9 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Responsiveness
 
-- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on JioPhone2 (240x320px) and on Microsoft Lumia 550 (640x360px) the vicinity element inside the Bootstrap cards wasn't responsive and was coming out of its bottom border. I fixed this using display: grid in the card-body and increasing the height to 50vh, the same height of the card-img-top.
+- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content.
 
 ## Cross Browser Testing
 
-- I tested the website on different browsers: Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
-- Viewed on the following physical devices: iPhone 7, iPad .
+- I tested the website on different browsers checking also the responsive mode: Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
+- Viewed on the following physical devices: iPhone 7 (375px), iPad Air2(9.7 inch), iPad Pro (10.5 inch), iPhone11(6.1 inch), Samsung Galaxy A30(5.7 inch), Huawei Matebook 13(13 inch), HP EliteBook (14 inch).

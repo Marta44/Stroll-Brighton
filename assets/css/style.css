@@ -176,6 +176,10 @@ a{
     font-size: 1.875em;
 }
 /*--Booking section--*/
+#Booking {
+    overflow: hidden;
+    min-height: fit-content;
+}
 .booking-container{
     background-color: #fddfdf;
     -ms-flex-line-pack: center;
@@ -189,7 +193,7 @@ a{
             justify-content: center;
 }
 .booking-heading{
-    padding-top: 150px;
+    padding-top: 70px;
     padding-bottom: 30px;
 }
 /*--Contact form--*/
