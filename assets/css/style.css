@@ -138,6 +138,10 @@ a{
         -ms-flex-pack: center;
             justify-content: center;
 }
+/*--Container of card places--*/
+.cardContainer{
+    padding-top: 50px;
+}
 /*--Tips section--*/
 .tips-container{
     background-color: #defde0;
