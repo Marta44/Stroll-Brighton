@@ -127,7 +127,7 @@ a{
 /*--Google Map--*/
 #map{
     width: 70%;
-    height: 70vh;
+    height: 50vh;
     margin-top: 30px;
 }
 .col-map{
@@ -194,7 +194,7 @@ a{
 }
 .booking-heading{
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 /*--Contact form--*/
 .form-container{

@@ -103,7 +103,7 @@ More testing in [Emailjs](#emailjs).
 - Four categories are provided(art sites, outdoor activities, cafè places, amusement).
 - Pressing the button it displays the markers of the corresponding place type and a Bootstrap card with the photo, name and vicinity of the place.
 - This helps the user to discover new places and plan the visit in advance looking at the vicinity between these places.
-![Card-places](/assets/docs/testing-images/ "card places carousel")
+![Card-places](/assets/docs/testing-images/card-places.png "card places carousel")
 
 > "I want to get in touch with a local person who can guide me around the city"
 
@@ -140,7 +140,7 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Responsiveness
 
-- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content.
+- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other medium screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content. Also the height of the map wasn't proportionate so I set it to 50vh otherwise in px there was empty space under the map.
 
 ## Cross Browser Testing
 
