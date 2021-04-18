@@ -137,10 +137,12 @@ The user receives a positive or negative feedback as the send button displays a 
 I decided to leave the owl dots only on larger screens and not under the breakpoint of (max-width: 767.98px).
 ![Desktop lighthouse](/assets/docs/testing-images/desktop-lighthouse.png "desktop score")
 ![Mobile lighthouse](/assets/docs/testing-images/mobile-lighthouse.png "mobile score")
+- I checked the performance also with [mobiReady](https://ready.mobi/#1921363-1erx)
 
 ## Responsiveness
 
 - I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other medium screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content. Also the height of the map wasn't proportionate so I set it to 50vh otherwise in px there was too much empty space under the map.
+- I tested the responsiveness also with: [ResponsiveDesignChecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fmarta44.github.io%2FStroll-Brighton%2F&width=1400&height=700)
 
 ## Cross Browser Testing
 
