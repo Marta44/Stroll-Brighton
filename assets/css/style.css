@@ -154,12 +154,12 @@ a{
     padding-bottom: 50px;
 }
 /*--Carousel cards used for both Explore and Tip section--*/
-#attraction-slider #card-places {
+.owl-carousel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-#attraction-slider #card-places .card{
+.owl-carousel .card{
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -175,6 +175,18 @@ a{
 .owl-nav{
     font-size: 1.875em;
 }
+.owl-prev, .owl-next{
+    position: absolute;
+}
+.owl-prev{
+    left: -30px;
+    top: 100px;
+}
+.owl-next{
+    right: -30px;
+    top: 100px;
+}
+
 /*--Booking section--*/
 #Booking {
     overflow: hidden;
@@ -313,7 +325,7 @@ footer{
         text-align: center; 
         -ms-flex-line-pack: center; 
          padding-top: 10px;
-        width: 90%;
+        width: 95%;
     }
     #copyright-col{
         align-content: center; 

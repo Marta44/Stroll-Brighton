@@ -46,7 +46,7 @@ I fixed these errors and now the only warning left is that the section "Home" do
 
 - **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side. When the user clicks the toggle menu and selects a link it brings to the corresponding section and hides the collapsible element as I used hide() method.
 - **Hero-image**: when we scroll down the page using the scroll-bar or the keyboard arrows the hero-image zooms out and zooms in back again if we scroll up.
-- **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping.
+- **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping and also the map itself acts responsively.
 More testing in [Google Map](#google-map).
 - **Tips section**: the carousel is working as expected. The slider doesn't auto play and is triggered clicking on the left or right arrows or using the dots. At the breakpoint of (max-width: 767.98px) the navigation dots disappear and for smaller screen sizes there are only the left and right navigation arrows. Inside the cards of the "Tip section" the links to the places suggested are working as expected and are bringing to their websites.
 - **Contact form**: trying to submit the form with all the fields empty an error message appears saying "fill out this field". Trying to insert an invalid email address an error message suggests which part of the email address is missing (@ .dot saying that the value is incomplete). I added the boolean attribute required to the fullname, email address, selection and text message fields so if they are not filled is not possible to send the email. The select element is working as expected and provides three options in a dropdown list: art tour, nature tour and fun tour. Trying to fill out the form correctly the email is sent. The user receives a positive or negative feedback upon submission through a modal alert message. The modal works as expected, it closes using the button "Close" or the cross on the top-right.
@@ -57,11 +57,11 @@ More testing in [Emailjs](#emailjs).
 
 - I tested the map component restrictions to "gb" trying to type in the input field "Berlin" and the result is positive as it doesn't appear in the autocomplete search.
 ![Search-restriction-UK](/assets/docs/testing-images/search-restricted.png "map-restriction")
+- When a user selects a prediction from the autocomplete search box a marker is created and has a label with a title (the name of the place).
 - An alert message (no details available for input: "name of the place") appears when a user type some words, in this case I tried "north", and press Enter without selecting one of the suggested places in the autocomplete search box.
 ![Google-map-alert-input](/assets/docs/testing-images/alert-message-google-map.png "map-alert")
-- I tested manually the four buttons (btn-art, btn-outdoor, btn-cafe, btn-amusement). On user's click they display the markers for the different types (museum, park, cafe, amusement_park) and create bootstrap cards containing photo, name and vicinity of these places.
+- I tested manually the four buttons (btn-art, btn-outdoor, btn-cafe, btn-amusement). On user's click they display the markers for the different types (museum, park, cafe, amusement_park) and create bootstrap cards containing photo, name and vicinity of these places. These cards are displayed in a carousel, to be consistent with the tip section.
 - If the user selects a new button the previous results are cleared before displaying the new category.
-- When a user selects a prediction from the autocomplete search box a marker is created and has a label with a title (the name of the place).
 
 ### API Key
 
@@ -140,9 +140,9 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 
 ## Responsiveness
 
-- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other medium screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content. Also the height of the map wasn't proportionate so I set it to 50vh otherwise in px there was empty space under the map.
+- I tested my website with all the emulated devices provided by Chrome DevTools. I have noticed that on iPad Pro(1024x1366) and other medium screen sizes the booking section had too much empty space under the contact form. I fixed this using min-height: fit-content. Also the height of the map wasn't proportionate so I set it to 50vh otherwise in px there was too much empty space under the map.
 
 ## Cross Browser Testing
 
-- I tested the website on different browsers checking also the responsive mode: Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
+- I tested the website on different browsers checking also the responsive mode on Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
 - Viewed on the following physical devices: iPhone 7 (375px), iPad Air2(9.7 inch), iPad Pro (10.5 inch), iPhone11(6.1 inch), Samsung Galaxy A30(5.7 inch), Huawei Matebook 13(13 inch), HP EliteBook (14 inch).
