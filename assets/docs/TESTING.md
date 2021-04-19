@@ -147,4 +147,4 @@ I decided to leave the owl dots only on larger screens and not under the breakpo
 ## Cross Browser Testing
 
 - I tested the website on different browsers checking also the responsive mode on Google Chrome, Microsoft Edge, Safari, Opera and Firefox.
-- Viewed on the following physical devices: iPhone 7 (375px), iPad Air2(9.7 inch), iPad Pro (10.5 inch), iPhone11(6.1 inch), Samsung Galaxy A30(5.7 inch), Huawei Matebook 13(13 inch), HP EliteBook (14 inch).
+- Viewed on the following physical devices: iPhone 7 (4.7 inch), iPhone 6Plus (5.5 inch), iPad Air2(9.7 inch), iPad Pro (10.5 inch), iPhone11(6.1 inch), Samsung Galaxy A30(5.7 inch), Huawei Matebook 13(13 inch), HP EliteBook (14 inch).
