@@ -4,18 +4,22 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+
 /*--UX Colors
 White Smoke: #f5f5f5;
 Tutu: #fddfdf;
 Frosted Mint: #defde0;
 Alice Blue: #def3fd;
 --*/
+
 /*--Google Fonts
 font-family: 'Annie Use Your Telescope', cursive;
 font-family: 'Cabin Sketch', cursive;
 font-family: 'Gaegu', cursive;
 --*/
+
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin+Sketch:wght@400;700&family=Gaegu&display=swap');
+
 /*--General--*/
 body{
     font-family: 'Gaegu', cursive;
@@ -37,6 +41,7 @@ h3{
 p{
     font-size: 1.25em;
 }
+
 /*--Navbar--*/
 .nav-container{
     display: -webkit-box;
@@ -50,12 +55,14 @@ p{
 .bg-color-navbar{
     background-color: whitesmoke;
 }
+
 /*--Navbar logo--*/
 .navbar-brand{
     font-family: 'Cabin Sketch', cursive;
     font-size: 1.5em;
     font-weight: 700;
 }
+
 /*--Nav Links--*/
 a{  
     color: black;
@@ -77,6 +84,7 @@ a{
 #nav-booking:hover{
     color:  lightcoral;
 }
+
 /*--Hero Image--*/
 .heroImg-container{
     position: relative;
@@ -99,6 +107,7 @@ a{
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
 }
+
 /*--Explore section--*/
 .explore-container{
     background-color: #def3fd;
@@ -106,10 +115,12 @@ a{
 .explore-heading{
     padding-top: 70px;
 }
+
 /*--Input search box--*/
 .search-label{
     font-size: 1.25em;
 }
+
 /*--Four buttons for each type place--*/
 .button-places{
     display: -webkit-inline-box;
@@ -124,6 +135,7 @@ a{
     margin-top: 15px;
     background-color: whitesmoke;
 }
+
 /*--Google Map--*/
 #map{
     width: 70%;
@@ -138,10 +150,12 @@ a{
         -ms-flex-pack: center;
             justify-content: center;
 }
+
 /*--Container of card places--*/
 .cardContainer{
     padding-top: 50px;
 }
+
 /*--Tips section--*/
 .tips-container{
     background-color: #defde0;
@@ -153,6 +167,7 @@ a{
     padding-top: 10px;
     padding-bottom: 50px;
 }
+
 /*--Carousel cards used for both Explore and Tip section--*/
 .owl-carousel {
     display: -webkit-box;
@@ -171,6 +186,7 @@ a{
        object-fit: cover;
     height: 50vh;
 }
+
 /*--Carousel navigation--*/
 .owl-nav{
     font-size: 1.875em;
@@ -190,6 +206,8 @@ a{
 /*--Booking section--*/
 #Booking {
     overflow: hidden;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
 }
 .booking-container{
@@ -208,16 +226,19 @@ a{
     padding-top: 70px;
     padding-bottom: 20px;
 }
+
 /*--Contact form--*/
 .form-container{
     width: 60%;
 }
+
 /*--Submit button--*/
 #send-btn{
     font-size: 1.125em;
     background-color: whitesmoke;
     border-color: black;
 }
+
 /*--Modal--*/
 .modal-body{
     background-color: whitesmoke;
@@ -225,6 +246,7 @@ a{
 .modal-title{
     font-weight: bold;
 }
+
 /*--Footer--*/
 footer{
     bottom: 0;
@@ -237,6 +259,7 @@ footer{
         flex-shrink: 0;
     width: 100%;
 }
+
 /*--Copyright--*/
 .copyright{
     display: -webkit-inline-box;
@@ -246,6 +269,7 @@ footer{
     font-family: 'Gaegu', cursive;
     padding-top: 15px;
 }
+
 /*--- Social Media links ---*/
 #social-col{
     align-content: flex-start; 
@@ -261,6 +285,7 @@ footer{
     justify-content: flex-start;
     padding-top: 15px;
 }
+
 /*--Social media icons--*/
 .fab{
     font-size: 1.25em;
@@ -286,6 +311,7 @@ footer{
 .fa-instagram-square:hover{
     color: lightcoral;
 }
+
 /*--Media Queries--*/
 /*--Phones--*/
 @media (max-width: 575.98px){
@@ -296,6 +322,7 @@ footer{
         overflow: hidden;
     }
 }
+
 /*--Landscape phones--*/
 @media screen and (max-width: 768px){
     h2 {
@@ -325,7 +352,7 @@ footer{
         text-align: center; 
         -ms-flex-line-pack: center; 
          padding-top: 10px;
-        width: 95%;
+        width: 90%;
     }
     #copyright-col{
         align-content: center; 

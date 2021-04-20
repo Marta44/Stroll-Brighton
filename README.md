@@ -92,14 +92,14 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 ### The target audience of this website
 
 - A large demographic range of individuals:
-- non Brighton residents.
-- local residents.
-- international tourists.
+  - non Brighton residents.
+  - local residents.
+  - international tourists.
 - The attractions displayed are heterogeneous to diversify the offer and please different age brackets.
 
 ### Users of this site are looking for
 
-- A personal guide to give them relevant suggestions and advices about Brighton.
+- A personal guide that can give them relevant suggestions and advices about Brighton.
 - A website where they can search and find places using an interactive map.
 - A website where they can find tips and suggestions about what to visit.
 
@@ -107,7 +107,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 ### The business goals of this website
 
-- Showcase the main attractions of Brighton divided into four categories: art sites, outdoor places(mainly parks), cafés and amusement parks.
+- Showcase the main attractions of Brighton divided into four categories: art sites (museums), outdoor places(parks), cafés and amusement parks.
 - Provide in the tip section links to local businesses and attractions websites.
 - Be contactable to users. Having studied art I wish to guide them to visit cultural places and art sites in the city.
 
@@ -120,7 +120,7 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 
 ## 2. Scope
 
-The scope of this project is to guide users to help them discover of the city of Brighton, keep them engaged by using an interactive map and contacting me via email. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
+The scope of this project is helping users to discover the city of Brighton, keep them engaged by using an interactive map and contacting me via email. Following a Minimal Viable Product (MVP) scheme this website wants to accomplish:
 
 - Clarity.
 - Usability.
@@ -145,13 +145,14 @@ The website displays in an unique page divided into four sections. I created wir
 
 Colours scheme:
 I have used pastel colours which are reminiscent of typical Brighton houses.
-I took inspiration from this palette: ![Pastel colors palette](/assets/images/ux-colors-palette.png "Pastel colors")
+I took inspiration from this palette:
+![Pastel colors palette](/assets/images/ux-colors-palette.png "Pastel colors")
 
 - Tutu: #fddfdf for the explore section
 - Frosted Mint: #defde0 for the tips section
 - Alice Blue: #def3fd for the booking section
-For the navigation bar and the footer I choose a Whitesmoke background (#f5f5f5) as it is neutral and in contrast with the colorful sections.
-For the navigation and footer links: Orange, Lightcoral, Lightgreen and Lightskyblue because provide enough visibility and readability.
+- For the navigation bar and the footer I choose a Whitesmoke background (#f5f5f5) as it is neutral and in contrast with the colorful sections.
+- For the navigation and footer links: Orange, Lightcoral, Lightgreen and Lightskyblue because provide enough visibility and readability.
 
 Typography:
 
@@ -159,8 +160,8 @@ Typography:
 - For the main text and contents I chose "Ganja Flower" Google Font because it is user friendly.
 - For the headings I chose "Annie Use Your Telescope" Google Font because it is an hand writing font and pairs with "Ganja Flower".
 Images:
-All the images not taken by myself have been credited in "Media". They have been selected to be eye-catching, interesting and engaging. I chose the "favorite icon" because it is reminiscent of the famous Brighton beach huts.
-The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
+  - All the images not taken by myself have been credited in "Media". They have been selected to be eye-catching, interesting and engaging. The purpose of the images is to showcase the main locations of the city and encourage users to visit them.
+  - I chose the "favorite icon" because it is reminiscent of the famous Brighton beach huts.
 
 ---
 
@@ -170,17 +171,18 @@ The purpose of the images is to showcase the main locations of the city and enco
 
 - An unique scrolling page divided into four sections (home-explore-tips-booking).
 - The navigation bar is fixed to the top of the page and brings the users to the different sections.
+- On smaller screen sizes the toggle menu closes after the user clicks on a link to allow a better view of the page's content.
 - The footer is fixed to the bottom of the page and provides copyright info at the bottom-left, social media pages icons (GitHub, LinkedIn, Facebook, Instagram) in the center, if clicked they bring the users to social media platforms opened on a different tab.
 - On the "Explore section" is present a Google Map API.
   - The map allows users to search a place by name. The search box auto completes the word inserted by the user.
   - The map allows to browse the map by four categories (museum, park, cafe, amusement_park). It displays markers of their location and Bootstrap cards of 8/10 places with the photo, name and vicinity of this place. These cards are displayed with a carousel.
 - On the "Tips section" is present a description about the aim of the project.
-- On the "Tips section" is present a carousel which displays the suggested places and links to their websites.
+- On the "Tips section" is present a carousel which displays the suggested places through pictures, contents and links to their websites.
 - On the "Contact section" is present a form to get in touch with me.
 
 ### Features to add in the future
 
-- In the "Tips section" in the future I could add other suggestions especially when will reopen the venues for concerts and events in Brighton.
+- In the "Tips section" in the future I could add other suggestions especially when the venues for concerts and events in Brighton will reopen.
 - I would like to develop a forum where "Stroll  Brighton" users can present themselves, exchange experiences, share ideas and create an online community. Python skills required.
 
 ## Technologies Used
@@ -198,13 +200,13 @@ The purpose of the images is to showcase the main locations of the city and enco
 3. [FontAwesome](https://fontawesome.com/) : was used to add icons for social media links and for the little icons inside the buttons in the Explore section.
 4. [Google Fonts](https://fonts.google.com/) : was used to import typography fonts.
 5. [Balsamiq](https://balsamiq.com/) : was used to create wireframes during the design of the layout.
-6. [jQuery](https://jquery.com/) : was used to make the navbar responsive.
+6. [jQuery](https://jquery.com/) : was used to make the navbar responsive, to zoom the hero image and to create the carousels.
 7. [Popper.js](https://popper.js.org/) : was used to make the navbar responsive.
-8. [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) : was used to display my suggestions in the "Tips" section.
+8. [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) : was used to display my suggestions in the "Tips" section and to display the data called from Google Map.
 9. [AutoPrefixer](https://autoprefixer.github.io/) : was used to analyse the CSS code and make it suitable for all browsers.
 10. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/): was used to generate the table of contents for this README file.
 11. [Google Map](https://developers.google.com/maps/documentation/javascript/get-api-key) : Interactive Maps API.
-12. [EmailJs SDK](https://www.emailjs.com/) : Email API.
+12. [EmailJs SDK](https://www.emailjs.com/) : EmailJS API.
 
 ### Workspace and version control
 
@@ -237,7 +239,7 @@ Full testing documentation can be found in [TESTING.md](https://github.com/Marta
 - EmailJS stopped working when I merged the owl carousel branch into the master branch. I rearranged the scripts in this order: jquery,  popper, bootstrap, google map, emailjs. As a result of this action the problem was fixed.
 - For me has been a challenge to understand how to loop through the four types of places and I have to thank my Mentor Ignatius Ukwuoma to have shown me how to build sub-arrays into an array and loop through the results with a for each loop.
 - I have noticed that some of the images called from google map were higher than others and the default position of the directional arrows (at the bottom) wasn't user friendly and correct so I positioned the arrows on the left and right side of the image. In this way the user can control the carousel and at the same time view the whole card. I left the directional dots at the bottom like a second choice to control the carousel.
-- Another challenge has been building the carousel with the "card places" generated by google map. My mistake was that I was calling placesSlider.owlCarousel() immediately on page load, before the user was doing any search. On page load is empty so it couldn't display anything. I moved placesSlider.owlCarousel() right after cardContainer.innerHTML with the card. In this way when the user clicked on the first category the carousel was displayed and worked fine. The other problem was that when another category was selected, and the results were cleared, the carousel stopped working and only the cards were displayed. I solved this...
+- Another challenge has been building the carousel with the "card places" generated by Google Map. My mistake was that I was calling placesSlider.owlCarousel() immediately on page load, before the user was doing any search. On page load is empty so it couldn't display anything. I moved placesSlider.owlCarousel() right after cardContainer.innerHTML with the card. In this way when the user clicked on the first category the carousel was displayed and worked fine. The other problem was that when another category was selected, the results were cleared and the carousel stopped working. This is because I was wiping all the results with cardContainer.innerHTML = "". Then to understand if the div element with the class ".owl-stage-outer" existed, I used the length attribute > 0 and an alert message and the result was that it existed. 
 
 ---
 
@@ -275,10 +277,10 @@ How to run the code locally:
 - Download the ZIP file (allows you to extract the files on your local machine)
 
 ![Clone or download Repo](/assets/images/clone-download-repo.png "Clone or Download Repository")
-3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/Stroll-Brighton.git'.
-4. Press Enter and a clone of this project will be created on your machine.
-5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin'. This deletes all references to the remote repository without removing the repository from the remote server.
-6. When you clone this project to make Google Map loading on your local machine you have to generate a new API key following these steps [Generate an API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and copy your API key into the script in your html file.
+3. Clone my repository copying and pasting into the terminal of your preferred editor/local IDE 'git clone https://github.com/Marta44/Stroll-Brighton.git'
+4. Press Enter and a clone of this project will be created on your machine
+5. To remove all references to the remote repository type into your terminal: 'git remote rm origin' or 'git remote remove origin' This deletes all references to the remote repository without removing the repository from the remote server
+6. When you clone this project to make Google Map loading on your local machine you have to generate a new API key following these steps [Generate an API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and copy your API key into the script in your html file
 
 ---
 
@@ -286,10 +288,10 @@ How to run the code locally:
 
 ### Resources Used
 
-- [Code Institute Course Content](https://courses.codeinstitute.net/) - Main source of fundamental knowledge.
+- [Code Institute Course Content](https://learn.codeinstitute.net/dashboard) - Main source of fundamental knowledge.
 - [Stack Overflow](https://stackoverflow.com/) - General resource.
 - [CSS-Tricks](https://css-tricks.com/) - General resource.
-- [W3.CSS](https://www.w3schools.com/w3css/4/w3.css) - General resource.
+- [W3 school](https://www.w3schools.com/) - General resource.
 - [Youtube](https://www.youtube.com/) - General resource.
 - [Bootstrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - to learn the Bootstrap grid system.
 - "How to Google Map pdf" by Eamonn Smyth - to learn the main steps to call a Google map API.
@@ -315,17 +317,18 @@ Contents and texts has been written by Marta Marassi and main source of informat
 ### Media
 
 - The hero image in the home page is from [Unsplash](https://unsplash.com/photos/Y2mwlfxTf-k) and the author is Rhys Kentish.
-- The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created if with [Canva](https://www.canva.com/design/DAEah1hBTKM/4NPEN5NRMarOmrCE6hnO7g/edit).
+- The postcard in the readme file the image on the top-left is from [Pixabay](https://pixabay.com/it/photos/brighton-beach-pier-turismo-2811535/ ) and I created it with [Canva](https://www.canva.com/design/DAEah1hBTKM/4NPEN5NRMarOmrCE6hnO7g/edit).
 - In the carousel in the tip section I used two pictures from [Pixabay](https://pixabay.com/it/photos/architettura-costruzione-2566173/) and [Pixabay](https://www.pexels.com/photo/brown-concrete-building-near-body-of-water-3224129/).
 - All the other pictures were taken by me.
 - I used an icon made by Darius Dan [Author Darius Dan](https://www.flaticon.com/authors/darius-dan) as placeholder if some of the photos in Places API are not available. It is from [Flaticon](https://www.flaticon.com). [Icon-no-image-available](https://www.flaticon.com/free-icon/no-photos_1983863?term=no%20image&related_id=1983863).
-- I created the Favorite Icon with [LogoMakr](https://logomakr.com/0vgmQT) and sized it with [Favicon](https://favicon.io/favicon-converter/)
+- I created the Favorite Icon with [LogoMakr](https://logomakr.com) and sized it with [Favicon](https://favicon.io/favicon-converter/)
 - I took inspiration from this website for the colours combination
 [Musée Sainte-Croix website](https://www.awwwards.com/sites/musee-sainte-croix)
 
 ## Acknowledgements
 
 - I would like to say thanks to my mentor Ignatius Ukwuoma for his guidance and precious advices during the project.
+- I would like to thank my new mentor Marcel for his support and encouragement.
 - I want to thank the Code Institute **SLACK Community** for the assistance and source of learning.
 
 > **_NOTE:_** This is for educational purposes.

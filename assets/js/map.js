@@ -6,10 +6,11 @@ https://www.youtube.com/watch?v=c3MjU9E9buQ&t=98s
 
 var autocomplete = null;
 var map = null;
-let generalMarker = [];
+var generalMarker = [];
 var service;
 var cardContainer = document.getElementById("card-places");
 var cardMarkers = [];
+var cardCarousel = $(".owl-stage-outer");
 
 
 // Set the map limited to UK
@@ -102,7 +103,14 @@ placeType.forEach(function(option) {
 
 // Erase both markers and cards on click on another category
 function clearResults() {
-	cardContainer.innerHTML = "";
+    let callCarousel = document.getElementsByClassName("btn-explore");
+    if (cardContainer !== cardCarousel) {
+        callCarousel.onclick = cardCarousel;
+    }
+    else {
+        "";
+    }
+
 	cardMarkers.forEach(function(cardMarkers) {
 		cardMarkers.setMap(null);
 	});
