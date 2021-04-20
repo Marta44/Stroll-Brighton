@@ -44,7 +44,7 @@ I fixed these errors and now the only warning left is that the section "Home" do
 
 ## Manual functional testing
 
-- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms to underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side. When the user clicks the toggle menu and selects a link it brings to the corresponding section and hides the collapsible element as I used hide() method.
+- **Navigation Bar**: hovering over the links labels "Home, Explore, Tips, Booking" they turn into different colours (Orange, Lightskyblue, Lightgreen, Lightcoral) and the text transforms into underlined. If we click on the logo "Stroll Brighton" a link brings up to the top of the page to the "Home section". At the breakpoint of (max-width: 767.98px) the navbar transforms into a toggle menu and clicking the burger icon, placed on top-right it opens a collapsible menu on the left side. When the user clicks the toggle menu and selects a link it brings to the corresponding section and hides the collapsible element as I used hide() method.
 - **Hero-image**: when we scroll down the page using the scroll-bar or the keyboard arrows the hero-image zooms out and zooms in back again if we scroll up.
 - **Explore section**: when the user place the mouse cursor in the search box a pointer appears and the input field gets focused. Reducing and expanding the window width the fours buttons adapt responsively without overlapping and also the map itself acts responsively.
 More testing in [Google Map](#google-map).
@@ -115,6 +115,7 @@ More testing in [Emailjs](#emailjs).
 > "I expect to find relevant information and contents about the main attractions of Brighton"
 
 - A carousel allows to read information and see the pictures of some places suggested by me.
+- For some of the attractions I have provided the links to their official websites.
 ![Contents](/assets/docs/testing-images/test-userstory-contents.png "contents")
 
 ## Site Owner testing
@@ -127,13 +128,13 @@ More testing in [Emailjs](#emailjs).
 > "I want to be contacted through a contact form to my personal email address"
 
 - Once the contact form is filled correctly and the send button is pressed I receive an email to my personal email address.
-The user receives a positive or negative feedback as the send button displays a text ("sent!" or "error!") and an alert window message appears.
+The user receives a positive or negative feedback through a modal alert message.
 ![EmailJS-testing](/assets/docs/testing-images/test-emailjs.png "emailjs-test")
 
 ## Lighthouse developers tool
 
 - I had a low score in the performance because I first loaded the images for the carousel in an high quality png format. I decided to change them into jpg format to increase the speed of their loading.
-- In the accessibility I have the warning that the owl dots buttons are not accessible for the screen readers. I tried to add aria-label="directional-dots" and aria-selected="true" to the button of the dotElement in the carousel but I didn't find a fix.
+- In the accessibility I have the warning that the owl dots buttons are not accessible for the screen readers. I tried to add aria-label="directional-dots" and aria-selected="true" to the button of the dotElement in the carousel but I couldn't find a fix.
 I decided to leave the owl dots only on larger screens and not under the breakpoint of (max-width: 767.98px).
 ![Desktop lighthouse](/assets/docs/testing-images/desktop-lighthouse.png "desktop score")
 ![Mobile lighthouse](/assets/docs/testing-images/mobile-lighthouse.png "mobile score")
