@@ -92,14 +92,14 @@ It is designed to be responsive on all devices (desktop screens, tablets and sma
 ### The target audience of this website
 
 - A large demographic range of individuals:
-  - non Brighton residents.
-  - local residents.
-  - international tourists.
+  - Non Brighton residents.
+  - Local residents.
+  - International tourists.
 - The attractions displayed are heterogeneous to diversify the offer and please different age brackets.
 
 ### Users of this site are looking for
 
-- A personal guide that can give them relevant suggestions and advices about Brighton.
+- A personal guide who can provide relevant suggestions and advices about Brighton.
 - A website where they can search and find places using an interactive map.
 - A website where they can find tips and suggestions about what to visit.
 

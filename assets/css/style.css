@@ -152,7 +152,7 @@ a{
 }
 
 /*--Container of card places--*/
-.cardContainer{
+.carousel-container{
     padding-top: 50px;
 }
 
@@ -237,6 +237,9 @@ a{
     font-size: 1.125em;
     background-color: whitesmoke;
     border-color: black;
+}
+#contactForm:focus input:invalid{
+    background-color: red;
 }
 
 /*--Modal--*/
