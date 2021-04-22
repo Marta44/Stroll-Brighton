@@ -75,6 +75,8 @@ More testing in [Emailjs](#emailjs).
 ## EmailJS
 
 - The contact form validates the input fields before the form is submitted.
+- The :valid pseudo class indicates when a field is filled correctly changing the input border color into green.
+![valid](//assets/docs/testing-images/valid-input-fields.png)
 - These are the parameters that I set in the EmailJS template:
 ![EmailJS-parameters](/assets/docs/testing-images/parameters-emailjs.png "template parameters")
 - To access the value of the text input box I used the syntax: form.fieldname.value
