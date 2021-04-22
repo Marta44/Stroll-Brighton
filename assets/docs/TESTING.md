@@ -40,7 +40,8 @@ I fixed these errors and now the only warning left is that the section "Home" do
 - I checked emailjs and I have two errors: one undefined variable: emailjs and one unused variable: sendMail. These are variables that are called from the html file.
 ![test code of emailjs](/assets/docs/testing-images/test-sendEmailjs.png "emailjs-validation")
 - The first time I run the map code through JS HINT I had warnings that I missed semicolons on line 99, 100 and 107. I corrected these. I still have warnings about google variable undefined and initAutocomplete variable unused because I call it back in the script in the html file.
-![test code of the map](/assets/docs/testing-images/test-map.png "map-validation")
+![test code of the map](/assets/docs/testing-images/test1-map.png "map-validation")
+![test code of the map](/assets/docs/testing-images/test2-map.png "map-validation")
 
 ## Manual functional testing
 
