@@ -238,8 +238,8 @@ a{
     background-color: whitesmoke;
     border-color: black;
 }
-#contactForm:focus input:invalid{
-    background-color: red;
+#contactForm input:valid{
+    border: 4px solid #defde0;
 }
 
 /*--Modal--*/
