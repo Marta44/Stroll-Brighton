@@ -84,7 +84,6 @@ More testing in [Emailjs](#emailjs).
 - Once the email has been sent successfully a Bootstrap modal alert message appears.
 ![EmailJS-testing-modalSent](/assets/docs/testing-images/modal-sent-message.png "modal success")
 - If some error occurs another Bootstrap modal alert message appears.
-![EmailJS-testing-modalError](/assets/docs/testing-images/ "modal error")
 - If a user try to submit the form missing to fill one of the fields a message appears as all the fields have the required attribute. It prevents the form from being submitted if some fields are empty.
 ![ContactForm-required-fields](/assets/docs/testing-images/fields-required.png "fields required in contact form")
 

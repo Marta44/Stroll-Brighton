@@ -10,7 +10,6 @@ var generalMarker = [];
 var service;
 var cardContainer = document.getElementById("card-places");
 var cardMarkers = [];
-var cardCarousel = $(".owl-stage-outer");
 
 
 // Set the map limited to UK/GB
@@ -69,7 +68,7 @@ function displayPlace() {
 	map.setCenter(place.geometry.location);
 }
 
-// Clear out the old markers
+// Clear out the markers of the auto complete search 
 function clearMarkers() {
 	for (var i = 0; i < generalMarker.length; i++) {
 		if (generalMarker[i]) {
@@ -102,16 +101,20 @@ placeType.forEach(function(option) {
 	};
 });
 
-// Erase both markers and cards carousel on click on another category
+// 
 function clearResults() {
+    // Remove completely the card container
     cardContainer.remove();
-    
+    // Recreate it with the same id and classes 
     var newContainer = document.createElement("div");
     newContainer.id = "card-places";
     newContainer.classList.add("owl-carousel", "owl-theme");
+    // Append it to the carousel-container
     document.getElementsByClassName("carousel-container")[0].appendChild(newContainer);
+    // Call it back again
     cardContainer = document.getElementById("card-places");
-   
+
+    // Clear the card places markers
 	cardMarkers.forEach(function(cardMarkers) {
 		cardMarkers.setMap(null);
 	});
