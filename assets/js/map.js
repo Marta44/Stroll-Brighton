@@ -105,12 +105,15 @@ placeType.forEach(function(option) {
 function clearResults() {
     // Remove completely the card container
     cardContainer.remove();
+
     // Recreate it with the same id and classes 
     var newContainer = document.createElement("div");
     newContainer.id = "card-places";
     newContainer.classList.add("owl-carousel", "owl-theme");
+
     // Append it to the carousel-container
     document.getElementsByClassName("carousel-container")[0].appendChild(newContainer);
+    
     // Call it back again
     cardContainer = document.getElementById("card-places");
 
