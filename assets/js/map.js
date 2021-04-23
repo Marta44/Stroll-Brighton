@@ -102,7 +102,7 @@ placeType.forEach(function(option) {
 	};
 });
 
-// 
+// Clear and reset the results on button click
 function clearResults() {
 	// Remove completely the card container
 	cardContainer.remove();
