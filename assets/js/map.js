@@ -115,7 +115,7 @@ function clearResults() {
 	// Append it to the carousel-container
 	document.getElementsByClassName("carousel-container")[0].appendChild(newContainer);
 
-	// Call it back again
+	// Define again the variable cardContainer
 	cardContainer = document.getElementById("card-places");
 
 	// Clear the card places markers
@@ -143,7 +143,7 @@ function displayPlaces(places) {
 			image = "assets/images/icon-no-image-available.png";
         }
         
-		// Append a Bootstrap card to the card container in html file
+		// Append a Bootstrap card to the card container (id="card-places") in html file
 		cardContainer.innerHTML =
 
 			cardContainer.innerHTML +
